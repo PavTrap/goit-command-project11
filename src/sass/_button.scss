@@ -1,0 +1,55 @@
+.products-btn {
+    width: 108px;
+    height: 38px;
+
+    background-color: transparent;
+    border: 2px solid #F8D24E;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+        border: 2px solid #0A8817;
+        outline: transparent;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 134px;
+        height: 42px;
+        border-radius: 10px;
+
+        &:hover {
+            border: 2px solid #0A8817;
+        }
+
+        &:focus {
+            border: 2px solid #0A8817;
+            color: #fff;
+        }
+    }
+}
+
+.info-btn{
+    width:164px;
+    height: 42px;
+    height: 42px;
+    background: #F8D24E;
+    border-radius: 10px;
+    color: black;
+    border: none;
+    &:hover{
+        background: #0A8817;
+    }
+    &:focus{
+        background: #0A8817;
+     
+        color: #fff;
+        outline: transparent;
+    }
+}
+
+body{
+    box-sizing: border-box;
+    background-color:#84A178;;
+}
