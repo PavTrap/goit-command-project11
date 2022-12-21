@@ -7,24 +7,24 @@ body{
 		background-size: cover;
 		z-index: -1;
 
-		background-image: url(../images/body_bg/mobile@1x.png);
+		background-image: url(../images/body_bg/mobile1x.png);
 
 				@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
-					background-image: url(../images/body_bg/mobile@2x.png);
+					background-image: url(../images/body_bg/mobile2x.png);
 				}
 	}
 	@media (min-width:769px){
-		background-image: url(../images/body_bg/tablet@1x.png);
+		background-image: url(../images/body_bg/tablet1x.png);
 
 				@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
-					background-image: url(../images/body_bg/tablet@2x.png);
+					background-image: url(../images/body_bg/tablet2x.png);
 				}
 	}
 	@media (min-width:1200px){
-		background-image: url(../images/body_bg/desktop@1x.png);
+		background-image: url(../images/body_bg/desktop1x.png);
 
 				@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
-					background-image: url(../images/body_bg/desktop@2x.png);
+					background-image: url(../images/body_bg/desktop2x.png);
 				}
 	}
 }
