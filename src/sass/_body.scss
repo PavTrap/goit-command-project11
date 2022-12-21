@@ -1,0 +1,30 @@
+body{
+	@media (min-width:480px){
+		
+		max-width: 1600px;
+		background-repeat: no-repeat;
+		background-position: fixed;
+		background-size: cover;
+		z-index: -1;
+
+		background-image: url(../images/body_bg/mobile@1x.png);
+
+				@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+					background-image: url(../images/body_bg/mobile@2x.png);
+				}
+	}
+	@media (min-width:769px){
+		background-image: url(../images/body_bg/tablet@1x.png);
+
+				@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+					background-image: url(../images/body_bg/tablet@2x.png);
+				}
+	}
+	@media (min-width:1200px){
+		background-image: url(../images/body_bg/desktop@1x.png);
+
+				@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
+					background-image: url(../images/body_bg/desktop@2x.png);
+				}
+	}
+}
