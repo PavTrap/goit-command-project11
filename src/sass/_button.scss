@@ -30,21 +30,32 @@
   }
 }
 
-.btn__read-more {
+.about__btn-read-more {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
   width: 164px;
   height: 42px;
   background: #f8d24e;
   border-radius: 10px;
   color: black;
   border: none;
+
+  transition: background-color 250ms var(--transition-timing-function);
+
   &:hover {
-    background: #0a8817;
+    background-color: #0a8817;
   }
+
   &:focus {
-    background: #0a8817;
+    background-color: #0a8817;
 
     color: #fff;
     outline: transparent;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
   }
 }
 

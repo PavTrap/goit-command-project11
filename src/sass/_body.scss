@@ -1,4 +1,9 @@
 body{
+	font-family: Montserrat, sans-serif;
+	font-size: 12px;
+	letter-spacing: 0.04em;
+	color: var(--brand-black);
+
 	@media (min-width:480px){
 		
 		max-width: 1600px;
