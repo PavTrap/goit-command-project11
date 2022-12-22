@@ -1,12 +1,19 @@
 <!-- Gallery/Kristina Hodakivska -->
 
 <section class="gallery">
-  <div class="gallery-container container">
+  <div class="gallery__container container">
     <img
+      class="gallery__img"
+      srcset="
+        ./images/gallery/gallery-img_1.png    1013w,
+        ./images/gallery/gallery-img_1-2x.png 2026w,
+        ./images/gallery/gallery-img_1-3x.png 3039w
+      "
+      type="image/png"
       src="./images/gallery/gallery-img_1.png"
+      sizes="(min-width:1200px) 1013px, (min-width:768px) 704px, (min-width:320px) 280px, 100vw"
       alt="ice-cream gallery"
-      width="100"
-      height="100"
+      loading="lazy"
     />
   </div>
 </section>
