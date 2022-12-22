@@ -37,14 +37,22 @@
   border-radius: 10px;
   color: black;
   border: none;
+
+  transition: background-color 250ms var(--transition-timing-function);
+
   &:hover {
-    background: #0a8817;
+    background-color: #0a8817;
   }
+
   &:focus {
-    background: #0a8817;
+    background-color: #0a8817;
 
     color: #fff;
     outline: transparent;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
   }
 }
 

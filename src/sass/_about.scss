@@ -12,7 +12,6 @@
 }
 
 .about__uppertitle {
-    font-family: 'Montserrat';
     font-weight: 700;
     font-size: 18px;
     line-height: 1.22;
@@ -24,7 +23,6 @@
     @media screen and (min-width: 768px) {
         font-weight: 800;
         font-size: 22px;
-        letter-spacing: 0.04em;
     }
 
     @media screen and (min-width: 1200px) {
@@ -40,7 +38,6 @@
     font-size: 30px;
     line-height: 1.27;
     text-align: center;
-    letter-spacing: 0.04em;
     text-transform: uppercase;
 
     color: var(--brand-white);
@@ -90,12 +87,8 @@
 }
 
 .about__descriptions {
-    font-family: 'Montserrat';
-    font-weight: 400;
-    font-size: 12px;
     line-height: 1.76;
     text-align: center;
-    letter-spacing: 0.04em;
 
     color: var(--brand-white);
     margin-bottom: 4px;
@@ -115,10 +108,7 @@
 }
 
 .about__product {
-    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
     line-height: 1.62;
     text-align: center;
 
@@ -129,7 +119,6 @@
         width: 336px;
         font-size: 16px;
         line-height: 1.75;
-        letter-spacing: 0.04em;
         text-align: left;
         margin-bottom: 8px;
     }
@@ -148,10 +137,7 @@
 
     @media screen and (min-width: 768px) {
         width: 336px;
-        font-weight: 400;
-        font-size: 12px;
         line-height: 1.92;
-        letter-spacing: 0.04em;
         text-align: left;
 
         color: var(--brand-white);
@@ -167,38 +153,11 @@
 
 }
 
-.about__btn-read-more {
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    width: 164px;
-    height: 42px;
-    background: #f8d24e;
-    border-radius: 10px;
-    color: black;
-    border: none;
-
-    transition: background-color ;
-
-    &:hover {
-        background-color: #0a8817;
-    }
-
-    &:focus {
-        background-color: #0a8817;
-
-        color: #fff;
-        outline: transparent;
-    }
-
-    @media screen and (min-width: 768px) {
-    margin-left: 0;
-    }
-}
-
-.about__icon {
+.about__icon-btn {
     margin-left: 4px;
     fill: black;
+
+    transition: color 250ms var(--transition-timing-function);
 
     &:hover {
         fill: var(--brand-white);
