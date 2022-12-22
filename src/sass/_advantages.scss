@@ -12,17 +12,31 @@ p {
   margin: 0;
 }
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  // width: 1200px;
+
+.container__advantages {
   padding: 0 45px;
+
+  @media (min-width:769px){
+    padding: 0 76px;
+  }
+
+  @media (min-width:1200px){
+    padding: 0 15px;
+  }
 }
 
 .advantages {
-  padding-top: 50px;
+  // padding-top: 50px;
 padding-bottom: 64px;
 background-color: var(--brand-green);
+
+@media (min-width:769px) {
+  padding-bottom: 204px;
+}
+
+@media (min-width:769px) {
+  padding-bottom: 178px;
+}
 }
 
 .advantages__title {
@@ -37,18 +51,38 @@ background-color: var(--brand-green);
 
     align-items: center;
 
-    // @media screen and (min-width: 768px) {
-    //   flex-direction: row;
-    //   flex-wrap: wrap;      
-    // }
+    @media screen and (min-width: 769px) {
+      flex-direction: row;      
+      align-items: center;  
+      gap: 80px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;      
+      align-items: center;  
+      gap: 32px;
+    }
 }
 
-.advantages__item__box {
+.advantages__item {
   position: relative;
   padding-top: 60px;
+  max-width:230px;
+
+  @media (min-width:769px){
+    max-width:152px;
+    padding-top: 82px;
+    flex-basis: calc((100% - 160px) / 3);
+  }
+
+  @media (min-width:1200px){
+    max-width:368px;
+    padding-top: 90px;
+    flex-basis: calc((100% - 64px) / 3);
+  }
 }
 
-.advantages__item__box::before {
+.advantages__item::before {
   display: inline-block;
   position: absolute;
   content: "";
@@ -61,21 +95,23 @@ background-color: var(--brand-green);
   transform: translateX(-50%);
 }
 
-.advantages__item__box.cow::before {
+.advantages__item.cow::before {
   background-image: url(../images/advantages/cow1x.png);
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
     background-image: url(../images/advantages/cow2x.png);
+    background-size: contain;
   }
 }
 
-.advantages__item__box.weight::before {
+.advantages__item.weight::before {
   background-image: url(../images/advantages/weight1x.png);
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
     background-image: url(../images/advantages/weight2x.png);
+    background-size: contain;
   }
 }
 
-.advantages__item__box.icecrema::before {
+.advantages__item.icecrema::before {
   background-image: url(../images/advantages/icecrema1x.png);
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
     background-image: url(../images/advantages/icecrema2x.png);
@@ -106,12 +142,11 @@ font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
 font-size: 12px;
-line-height: 170%;
+line-height: calc(20/12);
 /* or 20px */
 
 text-align: center;
 
 color: var(--brand-white);
 
-max-width:230px;
 }
