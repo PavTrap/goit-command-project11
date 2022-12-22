@@ -1,0 +1,107 @@
+.hero {
+  @media screen and (max-width: 479px) {
+    padding-top: 50px;
+    padding-left: 20px;
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 14px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 45px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.overlay {
+  background-color: rgba(132, 161, 120, 1);
+
+  @media screen and (max-width: 767px) {
+    background-image:     url(./images/hero/ice-cream-mobile.jpg), 
+    url(.//src/images/hero/dots-mobile.png);
+
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image:   url(../images/hero/ice-cream-mobile2x.jpg), 
+    url(../images/hero/dots-mobile2x.png);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: bottom center, bottom center;
+    }
+  }
+
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/hero/dots-tablet.png),
+      url(../images/hero/ice-cream-tablet.jpg);
+  
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/hero/dots-tablet2x.png),
+      url(../images/hero/ice-cream-tablet2x.jpg);
+  }
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom center, bottom left 92px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/hero/dots_desktop.png),
+      url(../images/hero/ice-cream-desktop.jpg);
+  
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/hero/dots_desktop2x.png),
+      url(../images/hero/ice-cream-desktop2x.jpg);
+
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: bottom center, bottom left 92px;
+    }
+  }
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-title {
+  box-sizing: content-box;
+  @media screen and (max-width: 479px) {
+    max-width: 247px;
+    padding-top: 50px;
+    padding-left: 20px;
+
+    font-family: 'Seymour One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.27;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: #fcfcfc;
+  }
+
+  @media screen and (max-width: 1199px) {
+    padding-top: 14px;
+    padding-left: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 367px;
+    padding-top: 45px;
+    padding-left: 16px;
+
+    font-size: 38px;
+    line-height: 1.26;
+  }
+}
