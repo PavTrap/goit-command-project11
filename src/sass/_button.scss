@@ -1,0 +1,102 @@
+.btn__products {
+  width: 108px;
+  height: 38px;
+
+  background-color: transparent;
+  border: 2px solid #f8d24e;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border: 2px solid #0a8817;
+    outline: transparent;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 134px;
+    height: 42px;
+    border-radius: 10px;
+
+    &:hover {
+      border: 2px solid #0a8817;
+    }
+
+    &:focus {
+      border: 2px solid #0a8817;
+      color: #fff;
+    }
+  }
+}
+
+.btn__read-more {
+  width: 164px;
+  height: 42px;
+  background: #f8d24e;
+  border-radius: 10px;
+  color: black;
+  border: none;
+  &:hover {
+    background: #0a8817;
+  }
+  &:focus {
+    background: #0a8817;
+
+    color: #fff;
+    outline: transparent;
+  }
+}
+
+.btn__our-locations {
+  width: 196px;
+  height: 42px;
+  background: #f8d24e;
+  border-radius: 10px;
+  border: none;
+  color: black;
+  &:hover {
+    background: #0a8817;
+  }
+  &:focus {
+    background: #0a8817;
+
+    color: #fff;
+    outline: transparent;
+  }
+}
+.btn__franchise {
+    width: 196px;
+    height: 42px;
+    background-color: transparent;
+    border: 2px solid #f8d24e;
+    border-radius: 8px;
+
+    cursor: pointer;
+    
+    &:hover {
+      border: 2px solid #0a8817;
+    }
+
+    &:focus {
+      border: 2px solid #0a8817;
+      color: #fff;
+    }
+}
+
+.btn__buy-now{
+    width: 152px;
+    height: 42px;
+    background: #f8d24e;
+    border-radius: 10px;
+    border: none;
+    color: black;
+    &:hover {
+      background: #0a8817;
+     }
+    &:focus {
+      background: #0a8817;
+      color: #fff;
+      outline: transparent;
+  }
+}

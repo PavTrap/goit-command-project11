@@ -1,46 +1,117 @@
 .about {
     padding: 60px 0 50px 0;
-    background-color: #84A178;
+    background-color: var(--brand-green);
+
+    @media screen and (min-width: 768px){
+        padding-bottom: 52px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-bottom: 60px;
+    }
 }
 
 .about__uppertitle {
     font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 22px;
+    line-height: 1.22;
     text-align: center;
     text-transform: uppercase;
-    color: #FCFCFC;
+    color: var(--brand-white);
+    margin-bottom: 12px;
+
+    @media screen and (min-width: 768px) {
+        font-weight: 800;
+        font-size: 22px;
+        letter-spacing: 0.04em;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 30px;
+        line-height: 1.23;
+    }
 }
 
 .about__title {
+    width: 200px;
     font-family: 'Seymour One';
-    font-style: normal;
     font-weight: 400;
     font-size: 30px;
-    line-height: 38px;
+    line-height: 1.27;
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    
-    color: #FCFCFC;
+
+    color: var(--brand-white);
+    margin-bottom: 32px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media screen and (min-width: 768px){
+        width: 100%;
+        font-size: 34px;
+        line-height: 1.26;
+        letter-spacing: 0.06em;
+        margin-bottom: 80px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+        line-height: 1.25;
+        margin-bottom: 82px;
+    }
+}
+
+.about__desc {
+    @media screen and (min-width: 480px){
+    display: flex;
+    }
 }
 
 .about__img {
     border-radius: 140px;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px){
+        margin-right: 41px;
+        border-radius: 1228px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 109px;
+        border-radius: 1852.2px;
+    }
+}
+
+.about__text-right {
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .about__descriptions {
     font-family: 'Montserrat';
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.76;
     text-align: center;
     letter-spacing: 0.04em;
-    
-    color: #FCFCFC;
+
+    color: var(--brand-white);
+    margin-bottom: 4px;
+    width: 100%;
+
+    @media screen and (min-width: 768px) {
+    width: 336px;
+    line-height: 1.75;   
+    text-align: left;
+    margin-bottom: 8px;
+    }
+
+    @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    width: 463px;
+    }
 }
 
 .about__product {
@@ -50,18 +121,89 @@
     font-size: 12px;
     line-height: 1.62;
     text-align: center;
-    
-    color: #FCFCFC;
+
+    color: var(--brand-white);
+    margin-bottom: 10px;
+
+    @media screen and (min-width: 768px) {
+        width: 336px;
+        font-size: 16px;
+        line-height: 1.75;
+        letter-spacing: 0.04em;
+        text-align: left;
+        margin-bottom: 8px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 463px;
+        font-size: 14px;
+        line-height: 1.93;
+    }
 }
 
+.about__choice {
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
 
+    @media screen and (min-width: 768px) {
+        width: 336px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.92;
+        letter-spacing: 0.04em;
+        text-align: left;
 
+        color: var(--brand-white);
+        margin-bottom: 32px;
+    }
 
+    @media screen and (min-width: 1200px) {
+        width: 463px;
+        font-size: 14px;
+        line-height: 1.93;
+        margin-bottom: 54px;
+    }
 
+}
 
+.about__btn-read-more {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    width: 164px;
+    height: 42px;
+    background: #f8d24e;
+    border-radius: 10px;
+    color: black;
+    border: none;
 
+    transition: background-color ;
 
+    &:hover {
+        background-color: #0a8817;
+    }
 
+    &:focus {
+        background-color: #0a8817;
+
+        color: #fff;
+        outline: transparent;
+    }
+
+    @media screen and (min-width: 768px) {
+    margin-left: 0;
+    }
+}
+
+.about__icon {
+    margin-left: 4px;
+    fill: black;
+
+    &:hover {
+        fill: var(--brand-white);
+    }
+}
 
 
 
