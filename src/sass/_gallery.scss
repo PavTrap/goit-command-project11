@@ -1,0 +1,20 @@
+.gallery {
+    padding-top: 30px;
+    padding-bottom: 12px;
+}
+
+.gallery__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+
+    @media screen and (min-width: 768px) {
+        max-width: 704px
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1013px;
+    }
+
+}
