@@ -1,9 +1,25 @@
+<!-- Header Виниченко Елена -->
 <header class="header">
-    <div class="header__container ">
+    <div class="header__container container">
+        <a class="header__logo" href arial label>
+            <img 
+            class="logo__img"
+            srcset="
+            ./images/logo/s1x_logo.png 279w,
+            ./images/logo/m1x_logo.png 330w,
+            ./images/logo/l1x_logo.png 490w,
+            ./images/logo/s2x_logo.png 558w,
+            ./images/logo/m2x_logo.png 660w,
+            ./images/logo/l2x_logo.png 980w
+            " 
+            sizes="(min-width: 1200px) 490px,
+                    (min-width: 768px) 330px,
+                    (min-width: 480px) 279px, 100vw" 
+            alt="logo"
+            src="./images/logo/s1x_logo.png"
+            loading="lazy"/>
+        </a>
         <nav class="nav">
-            <!-- <a href="">
-                <img src="" alt="">
-            </a> -->
             <ul class="nav__list list">
                 <li class="nav__item">
                     <a href="" class="nav__link link">Home</a>
@@ -18,7 +34,16 @@
                     <a href="" class="nav__link link">Contact</a>
                 </li>
             </ul>
-            <button class="btn__buy-now" type="button" data-modal-open>Buy now</button>
         </nav>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu__icon" width="32" height="32">
+            <use href="./images/svg/symbol-defs.svg#header-menu"></use>
+          </svg>
+        </button>
+        <button class="btn__buy-now header__btn" type="button" data-modal-open>Buy now</button>
     </div>
 </header>
