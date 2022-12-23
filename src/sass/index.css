@@ -1,5 +1,42 @@
+@charset "UTF-8";
 @import '~node_modules/modern-normalize/modern-normalize.css';
+.gallery {
+  padding-top: 30px;
+  padding-bottom: 12px;
+}
+
+.gallery__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .gallery__img {
+    max-width: 704px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery__img {
+    max-width: 1013px;
+  }
+}
+
+/*СТИЛИ ДЛЯ СТРЕЛОК НА КНОПКАХ*/
+.btn__content {
+  display: inline;
+}
+
+.svg-icon {
+  margin-left: 4px;
+  fill: currentColor;
+}
+
+/*  СТИЛИ ДЛЯ КНОПОК  */
 .btn__products {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 108px;
   height: 38px;
   background-color: transparent;
@@ -26,7 +63,36 @@
   }
 }
 
+.btn__read-more {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 164px;
+  height: 42px;
+  background: #f8d24e;
+  border-radius: 10px;
+  color: black;
+  border: none;
+  transition: background-color 250ms var(--transition-timing-function);
+}
+.btn__read-more:hover {
+  background-color: #0a8817;
+}
+.btn__read-more:focus {
+  background-color: #0a8817;
+  color: #fff;
+  outline: transparent;
+}
+@media screen and (min-width: 768px) {
+  .btn__read-more {
+    margin-left: 0;
+  }
+}
+
 .btn__our-locations {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 196px;
   height: 42px;
   background: #f8d24e;
@@ -44,6 +110,9 @@
 }
 
 .btn__franchise {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 196px;
   height: 42px;
   background-color: transparent;
@@ -60,6 +129,9 @@
 }
 
 .btn__buy-now {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 152px;
   height: 42px;
   background: #f8d24e;
@@ -80,15 +152,17 @@
   margin-left: auto;
   margin-right: auto;
   outline: 1px solid tomato;
+  width: 100%;
 }
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 479px) {
   .container {
-    width: 279px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 100%;
+    width: 440px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -306,6 +380,7 @@ p {
 }
 
 body {
+  margin: 0 auto;
   font-family: Montserrat, sans-serif;
   font-size: 12px;
   letter-spacing: 0.04em;
