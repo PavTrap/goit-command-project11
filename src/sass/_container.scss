@@ -3,14 +3,11 @@
     margin-right: auto;
     outline: 1px solid tomato;
 
-  
-        width: 100%;
-        @media screen and (max-width: 479px){
-            padding-left: 10px;
-            padding-right: 10px;
-        }
-
-
+    width: 100%;
+    @media screen and (max-width: 479px){
+            padding-left: 20px;
+            padding-right: 20px;
+    }
 
     @media screen and (min-width: 480px) {
         width: 440px;
