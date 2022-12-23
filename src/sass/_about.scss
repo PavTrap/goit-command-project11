@@ -45,8 +45,11 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) {
     width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
     font-size: 34px;
     line-height: 1.26;
     letter-spacing: 0.06em;
@@ -61,22 +64,82 @@
 }
 
 .about__desc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+
   @media screen and (min-width: 480px) {
-    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  @media screen and (min-width: 768px) {
+    gap: 41px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 109px;
+  }
+}
+
+.about__position {
+  position: relative;
+  width: 280px;
+  height: 300px;
+
+  @media screen and (min-width: 480px) {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 330px;
+    height: 356px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 491px;
+    height: 529px;
+  }
+}
+
+.about__circle {
+  width: 279px;
+  height: 278px;
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+  border-radius: 140px;
+
+  @media screen and (min-width: 768px) {
+    width: 330px;
+    height: 330px;
+    border-radius: 165px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 490px;
+    height: 490px;
+    border-radius: 250px;
   }
 }
 
 .about__img {
+  position: absolute;
+  top: 22px;
+  left: 0;
   border-radius: 140px;
-  margin-bottom: 40px;
 
   @media screen and (min-width: 768px) {
-    margin-right: 41px;
+    top: 26px;
     border-radius: 1228px;
   }
 
   @media screen and (min-width: 1200px) {
-    margin-right: 109px;
+    top: 39px;
     border-radius: 1852.2px;
   }
 }
@@ -89,6 +152,7 @@
 .about__descriptions {
   line-height: 1.76;
   text-align: center;
+  font-weight: 400;
 
   color: var(--brand-white);
   margin-bottom: 4px;
@@ -111,9 +175,23 @@
   font-style: normal;
   line-height: 1.62;
   text-align: center;
+  font-weight: 400;
 
   color: var(--brand-white);
   margin-bottom: 10px;
+
+  @media screen and (min-width: 768px) {
+    width: 336px;
+    line-height: 1.75;
+    text-align: left;
+    margin-bottom: 8px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 463px;
+    font-size: 14px;
+    line-height: 1.93;
+  }
 
   @media screen and (min-width: 768px) {
     width: 336px;
@@ -130,10 +208,9 @@
   }
 }
 
-.about__choice {
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
+.about__icon-btn {
+  margin-left: 4px;
+  fill: currentColor;
 
   @media screen and (min-width: 768px) {
     width: 336px;
