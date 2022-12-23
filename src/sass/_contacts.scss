@@ -1,3 +1,5 @@
+// Contacts Liubomyr Vynnychuk //
+
 .list {
   list-style: none;
   padding: 0;
@@ -23,14 +25,14 @@
 
 .contacts {
   background-color: #84a178;
-  padding: 40 20 60;
+  padding: 40px 20px 60px;
 
   @media screen and (min-width: 768px) {
-    padding: 80 32 40;
+    padding: 80px 32px 40px;
   }
 
   @media screen and (min-width: 1200px) {
-    padding: 100 16 120;
+    padding: 100px 16px 120px;
   }
 }
 
@@ -69,17 +71,15 @@
   }
 
   @media screen and (min-width: 480px) and (max-width: 767px) {
-    max-width: 423px;
+    width: 439px;
   }
 
   @media screen and (min-width: 768px) {
     max-width: 224px;
-    // height: 537px;
   }
 
   @media screen and (min-width: 1200px) {
     max-width: 368px;
-    // min-height: 542px;
   }
 }
 
