@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import '~node_modules/modern-normalize/modern-normalize.css';
 .gallery {
   padding-top: 30px;
@@ -21,7 +22,21 @@
   }
 }
 
+/*СТИЛИ ДЛЯ СТРЕЛОК НА КНОПКАХ*/
+.btn__content {
+  display: inline;
+}
+
+.svg-icon {
+  margin-left: 4px;
+  fill: currentColor;
+}
+
+/*  СТИЛИ ДЛЯ КНОПОК  */
 .btn__products {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 108px;
   height: 38px;
   background-color: transparent;
@@ -49,6 +64,9 @@
 }
 
 .btn__read-more {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 164px;
   height: 42px;
   background: #f8d24e;
@@ -72,6 +90,9 @@
 }
 
 .btn__our-locations {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 196px;
   height: 42px;
   background: #f8d24e;
@@ -89,6 +110,9 @@
 }
 
 .btn__franchise {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 196px;
   height: 42px;
   background-color: transparent;
@@ -105,6 +129,9 @@
 }
 
 .btn__buy-now {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 152px;
   height: 42px;
   background: #f8d24e;
