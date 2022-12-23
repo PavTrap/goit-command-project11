@@ -1,0 +1,257 @@
+.products {
+  background-color: white;
+}
+
+.products__container {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.products__lable {
+  font-family: 'Montserrat';
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.22;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--brand-black);
+  margin-bottom: 12px;
+  padding-top: 60px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.23;
+    letter-spacing: 0.04em;
+  }
+}
+
+.products__title {
+  font-family: 'Seymour One';
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 1.27;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--brand-black);
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 34px;
+    line-height: 1.26;
+    margin-bottom: 80px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: 1.25;
+    margin-bottom: 120px;
+    letter-spacing: 0.06em;
+  }
+}
+
+.products__name {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.22;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--brand-black);
+  margin-bottom: 40px;
+  letter-spacing: 0.04em;
+
+  @media screen and (min-width: 768px) {
+    font-size: 22px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.23;
+    margin-bottom: 66px;
+  }
+}
+
+.products__text {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.78;
+  text-align: center;
+  color: var(--brand-black);
+  letter-spacing: 0.04em;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+.products__list {
+  padding-bottom: 60px;
+
+  @media screen and(min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-bottom: 80px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    gap: 29px;
+    padding-bottom: 60px;
+  }
+}
+
+.products__text--cream {
+  margin-bottom: 135px;
+
+  @media screen and(min-width: 768px) {
+    margin-bottom: 58px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    margin-bottom: 94px;
+  }
+}
+
+.products__text--coffee {
+  margin-bottom: 93px;
+
+  @media screen and(min-width: 768px) {
+    margin-bottom: 9px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    margin-bottom: 68px;
+  }
+}
+
+.products__text--milkshakes {
+  margin-bottom: 93px;
+
+  @media screen and(min-width: 768px) {
+    margin-bottom: 9px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    margin-bottom: 66px;
+  }
+}
+
+.products__list {
+  padding-bottom: 60px;
+
+  @media screen and(min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-bottom: 80px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    gap: 29px;
+    padding-bottom: 60px;
+  }
+}
+
+.products__item {
+  margin-bottom: 164px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and(min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
+
+.products__item:last-child {
+  margin-bottom: 0;
+}
+
+.products__item--cream {
+  background-color: var(--brand-green);
+  width: 280px;
+  height: 528px;
+
+  border-radius: 24px;
+
+  @media screen and(min-width: 768px) {
+    width: 224px;
+    height: 428px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    width: 370px;
+    height: 535px;
+  }
+}
+
+.products__item--green {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.products__item--coffee {
+  background-color: var(--brand-yellow);
+  width: 280px;
+  height: 528px;
+  border-radius: 24px;
+
+  @media screen and(min-width: 768px) {
+    width: 224px;
+    height: 428px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    width: 370px;
+    height: 535px;
+  }
+}
+
+.products__item--yellow {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.products__item--milkshakes {
+  padding-bottom: 60px;
+  background-color: var(--brand-brown);
+  width: 280px;
+  height: 528px;
+  border-radius: 24px;
+
+  @media screen and(min-width: 768px) {
+    width: 224px;
+    height: 428px;
+  }
+
+  @media screen and(min-width: 1200px) {
+    width: 370px;
+    height: 535px;
+  }
+}
+
+.products__item--brown {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
