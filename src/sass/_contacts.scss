@@ -102,6 +102,10 @@
   letter-spacing: 0.04em;
 
   color: #131313;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
 }
 
 .category__item:not(:last-child) {
@@ -109,11 +113,13 @@
   padding-bottom: 24px;
 
   border-bottom: 1px solid #e1e1e1;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
 }
 
 .adress__title {
-  margin-bottom: 8px;
-
   font-family: 'Montserrat';
   font-weight: 500;
   font-size: 12px;
@@ -121,6 +127,12 @@
   letter-spacing: 0.04em;
 
   color: #131313;
+
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+  }
 }
 
 .adress__link {
