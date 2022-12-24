@@ -87,6 +87,15 @@
     font-size: 14px;
     line-height: 17px;
 
+    &:hover {
+        background: #0a8817;
+      }
+      &:focus {
+        background: #0a8817;
+        color: #fff;
+        outline: transparent;
+      }
+
     @media screen and (min-width: 768px){
         display: flex;
         padding: 3px;
