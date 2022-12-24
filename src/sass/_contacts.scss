@@ -1,0 +1,305 @@
+// Contacts Liubomyr Vynnychuk //
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.contacts {
+  background-color: #84a178;
+  padding: 40px 20px 60px;
+
+  @media screen and (min-width: 768px) {
+    padding: 80px 32px 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 100px 16px 120px;
+  }
+}
+
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    gap: 32px;
+    margin-bottom: 60px;
+  }
+}
+
+.contacts__item {
+  background: #fcfcfc;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+
+  &:not(:last-child) {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 16px;
+    }
+  }
+
+  @media screen and (max-width: 479px) {
+    min-width: 100%;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    width: 439px;
+  }
+
+  @media screen and (min-width: 768px) {
+    max-width: 224px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 368px;
+  }
+}
+
+.category {
+  padding: 40px 32px 24px;
+
+  @media screen and (min-width: 768px) {
+    padding: 40px 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 40px;
+  }
+}
+
+.category__title {
+  display: inline-block;
+  min-width: 80px;
+  padding: 4px 22px;
+  align-items: center;
+  background: #f8d24e;
+  border-radius: 4px;
+
+  margin-bottom: 20px;
+
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+
+  color: #131313;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: calc(22 / 16);
+    margin-bottom: 32px;
+  }
+}
+
+.category__item:not(:last-child) {
+  margin-bottom: 24px;
+  padding-bottom: 24px;
+
+  border-bottom: 1px solid #e1e1e1;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.adress__title {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(22 / 12);
+  letter-spacing: 0.04em;
+
+  color: #131313;
+
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 12px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
+}
+
+.adress__link {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(22 / 12);
+  letter-spacing: 0.04em;
+
+  color: #d6936d;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(29 / 16);
+  }
+}
+
+.week__title {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(22 / 12);
+
+  color: #131313;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
+}
+
+.week__time {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(22 / 12);
+
+  color: #ababab;
+
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+    margin-bottom: 12px;
+  }
+}
+
+.category-contacts__item {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 12px;
+  line-height: calc(19 / 12);
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(21 / 14);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(24 / 16);
+  }
+}
+
+.category-contacts__link--phone {
+  color: #131313;
+  margin-bottom: 6px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 4px;
+  }
+}
+
+.category-contacts__link--mail {
+  color: #131313;
+}
+
+.btn__list {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+}
+
+.btn__our-locations {
+  width: 196px;
+  height: 42px;
+  background: #f8d24e;
+  border-radius: 10px;
+  border: none;
+  color: black;
+  &:hover {
+    background: #0a8817;
+  }
+  &:focus {
+    background: #0a8817;
+
+    color: #fff;
+    outline: transparent;
+  }
+}
+.btn__franchise {
+  width: 196px;
+  height: 42px;
+  background-color: transparent;
+  border: 2px solid #f8d24e;
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  &:hover {
+    border: 2px solid #0a8817;
+  }
+
+  &:focus {
+    border: 2px solid #0a8817;
+    color: #fff;
+  }
+}
