@@ -24,15 +24,41 @@
 }
 
 .contacts {
-  background-color: #84a178;
-  padding: 40px 20px 60px;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 25%,
+    var(--brand-green) 25%
+  );
+
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 60px;
 
   @media screen and (min-width: 768px) {
-    padding: 80px 32px 40px;
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 45%,
+      var(--brand-green) 45%
+    );
+
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 40px;
   }
 
   @media screen and (min-width: 1200px) {
-    padding: 100px 16px 120px;
+    background: linear-gradient(
+      to bottom,
+      transparent 0%,
+      transparent 16%,
+      var(--brand-green) 16%
+    );
+
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 120px;
   }
 }
 
@@ -56,7 +82,7 @@
 }
 
 .contacts__item {
-  background: #fcfcfc;
+  background: var(--brand-white);
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 
@@ -100,12 +126,12 @@
   min-width: 80px;
   padding: 4px 22px;
   align-items: center;
-  background: #f8d24e;
+  background: var(--brand-yellow);
   border-radius: 4px;
 
   margin-bottom: 20px;
 
-  font-family: 'Montserrat';
+  font-family: inherit;
   font-weight: 500;
   font-size: 12px;
   line-height: calc(14 / 12);
@@ -113,7 +139,7 @@
   text-align: center;
   letter-spacing: 0.04em;
 
-  color: #131313;
+  color: var(--brand-black);
 
   @media screen and (min-width: 768px) {
     font-size: 16px;
@@ -135,13 +161,13 @@
 }
 
 .adress__title {
-  font-family: 'Montserrat';
+  font-family: inherit;
   font-weight: 500;
   font-size: 12px;
   line-height: calc(22 / 12);
   letter-spacing: 0.04em;
 
-  color: #131313;
+  color: var(--brand-black);
 
   margin-bottom: 8px;
 
@@ -161,7 +187,7 @@
 }
 
 .adress__link {
-  font-family: 'Montserrat';
+  font-family: inherit;
   font-weight: 500;
   font-size: 12px;
   line-height: calc(22 / 12);
@@ -178,15 +204,20 @@
     font-size: 16px;
     line-height: calc(29 / 16);
   }
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
 }
 
 .week__title {
-  font-family: 'Montserrat';
+  font-family: inherit;
   font-weight: 500;
   font-size: 12px;
   line-height: calc(22 / 12);
 
-  color: #131313;
+  color: var(--brand-black);
 
   @media screen and (min-width: 768px) {
     font-size: 14px;
@@ -200,7 +231,7 @@
 }
 
 .week__time {
-  font-family: 'Montserrat';
+  font-family: inherit;
   font-weight: 500;
   font-size: 12px;
   line-height: calc(22 / 12);
@@ -222,7 +253,7 @@
 }
 
 .category-contacts__item {
-  font-family: 'Montserrat';
+  font-family: inherit;
   font-weight: 500;
   font-size: 12px;
   line-height: calc(19 / 12);
@@ -239,7 +270,7 @@
 }
 
 .category-contacts__link--phone {
-  color: #131313;
+  color: var(--brand-black);
   margin-bottom: 6px;
 
   @media screen and (min-width: 1200px) {
@@ -248,11 +279,11 @@
 }
 
 .category-contacts__link--mail {
-  color: #131313;
+  color: var(--brand-black);
 }
 
 .btn__list {
-  font-family: 'Montserrat';
+  font-family: inherit;
   font-weight: 600;
   font-size: 14px;
   line-height: calc(18 / 14);
@@ -271,10 +302,17 @@
 .btn__our-locations {
   width: 196px;
   height: 42px;
-  background: #f8d24e;
+  background: var(--brand-yellow);
   border-radius: 10px;
   border: none;
   color: black;
+
+  cursor: url(../images/cursor.png) 14 14, default;
+
+  transition: background-color 250ms var(--transition-timing-function),
+    outline 250ms var(--transition-timing-function),
+    color 250ms var(--transition-timing-function);
+
   &:hover {
     background: #0a8817;
   }
@@ -285,14 +323,19 @@
     outline: transparent;
   }
 }
+
 .btn__franchise {
   width: 196px;
   height: 42px;
   background-color: transparent;
-  border: 2px solid #f8d24e;
+  border: 2px solid var(--brand-yellow);
   border-radius: 8px;
 
-  cursor: pointer;
+  cursor: url(../images/cursor.png) 14 14, default;
+
+  transition: border 250ms var(--transition-timing-function),
+    outline 250ms var(--transition-timing-function),
+    color 250ms var(--transition-timing-function);
 
   &:hover {
     border: 2px solid #0a8817;
