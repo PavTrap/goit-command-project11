@@ -1,0 +1,111 @@
+<!-- Несколько модальных окон -->
+<div class="overlay js-overlay-modal">
+    <div class="modal about-product" data-modal="2">
+    <!--   Svg иконка для закрытия окна  -->
+
+    <svg class="modal__close js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+        <!-- <button class="buy-now__button">
+            <svg class="modal__close js-modal-close" width="24" height="24">
+        <use href="./images/svg/symbol-defs.svg#close"></use>
+        </svg>
+        </button> -->
+        <h2 class="about-product__title">Buy now</h2>
+            <div class="about-product__wrapper">
+                <img
+                    class="about-product__img img"
+                    srcset="./images/about-product/img-1.png 1x ./images/about-product/img-1@2x.png 2x"
+                    src="./images/about-product/img-1.png"
+                    alt="ice cream"
+                    width="132"
+                    height="132"
+                    loading="lazy"
+                />
+            </div>
+            <ul class="about-product__facts list">
+                <li class="about-product__item">
+                    <div class="about-product__container">
+                        <p class="about-product__value">320</p>
+                    </div>
+                    <p class="about-product__text">kcal</p>
+                </li>
+                <li class="about-product__item">
+                    <div class="about-product__container">
+                        <p class="about-product__value">4g </p>
+                    </div>
+                    <p class="about-product__text about-product__text--desk">Protein...</p>
+                    <p class="about-product__text about-product__text--mb">Prote...</p>
+                </li>
+                <li class="about-product__item">
+                    <div class="about-product__container">
+                        <p class="about-product__value">8,2g</p>
+                    </div>
+                    <p class="about-product__text">Fats</p>
+                </li>
+                <li class="about-product__item">
+                    <div class="about-product__container">
+                        <p class="about-product__value">40,4g </p>
+                    </div>
+                    <p class="about-product__text">Carbs</p>
+                </li>
+            </ul>
+            <h3 class="ingredients-title">Ingredients</h3>
+            <ul class="ingredients list">
+                <li class="ingredients-item">
+                    <p class="ingredients-text">Milk</p>
+                    <span class="ingredients-value">100ml</span>
+                </li>
+                <li class="ingredients-item">
+                    <p class="ingredients-text">Belgian chocolate</p>
+                    <span class="ingredients-value">20g</span>
+                </li>
+                <li class="ingredients-item">
+                    <p class="ingredients-text">Cream</p>
+                    <span class="ingredients-value">150 ml</span>
+                </li>
+                <li class="ingredients-item">
+                    <p class="ingredients-text">Cocoa powder</p>
+                    <span class="ingredients-value"> 30g</span>
+                </li>
+                <li class="ingredients-item">
+                    <p class="ingredients-text">Sugar</p>
+                    <span class="ingredients-value">40g</span>
+                </li>
+                <li class="ingredients-item">
+                    <p class="ingredients-text">Vanilla sugar</p>
+                    <span class="ingredients-value">10g</span>
+                </li>
+            </ul>
+
+        <form action="" class="about-product__form">
+			<div class="about-product__group">
+                <label class="about-product__label" for="user_name">
+				<input class="about-product__field" type="text" name="user_name" id="user_name" placeholder=" "  required pattern="[a-zA-Z]{1,15}"/>
+                <span class="about-product__name">Name</span>
+                </label>
+			</div>
+			<div class="about-product__group">
+                <label class="about-product__label" for="user_phone">
+				<input class="about-product__field" type="tel" name="user_phone" id="user_phone" placeholder=" " required pattern="[1-10]{1-15}"/>
+                <span class="about-product__name">Phone</span>
+                </label>
+			</div>
+			<div class="about-product__group">
+                <label class="about-product__label" for="user_message">
+                <textarea
+                    class="about-product__message"
+                    name="user_message"
+                    id="user_message"
+                    rows="6"
+                    placeholder=" "
+                ></textarea>
+                <span class="about-product__placeholder">Comment</span>
+            </label>
+            </div>
+            <button class="about-product__submit button" type="submit">Submit</button>
+        </form>
+        </div>
+    <!-- Подложка под модальным окном -->
+</div>
+
+
+
