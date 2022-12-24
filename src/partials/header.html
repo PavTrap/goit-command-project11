@@ -1,0 +1,54 @@
+<!-- Header Виниченко Елена -->
+<header class="header">
+    <div class="header__container container">
+        <a class="header__logo" href arial label>
+            <img 
+            class="logo__img"
+            srcset="
+            ./images/logo/s1x_logo.png 279w,
+            ./images/logo/m1x_logo.png 330w,
+            ./images/logo/l1x_logo.png 490w,
+            ./images/logo/s2x_logo.png 558w,
+            ./images/logo/m2x_logo.png 660w,
+            ./images/logo/l2x_logo.png 980w
+            " 
+            sizes="(min-width: 1200px) 490px,
+                    (min-width: 768px) 330px,
+                    (min-width: 480px) 279px, 100vw" 
+            alt="logo"
+            src="./images/logo/s1x_logo.png"
+            loading="lazy"/>
+        </a>
+        <nav class="nav">
+            <ul class="nav__list list">
+                <li class="nav__item">
+                    <a href="" class="nav__link link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="" class="nav__link link">How it’s made?</a>
+                </li>
+                <li class="nav__item">
+                    <a href="" class="nav__link link">Our products</a>
+                </li>
+                <li class="nav__item">
+                    <a href="" class="nav__link link">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="menu__icon" width="32" height="32">
+            <use href="./images/svg/symbol-defs.svg#header-menu"></use>
+          </svg>
+        </button>
+        <button class="btn__buy-now header__btn">
+            <p class="btn__content">Buy now</p>
+            <svg class="svg-icon" width="12" height="12">
+              <use xlink:href="./images/svg/symbol-defs.svg#icon-right-bold"></use>
+            </svg>
+          </button>
+    </div>
+</header>
