@@ -75,11 +75,7 @@
       color: var(--brand-yellow);
 
       @media screen and (min-width: 1200px){
-        cursor: url(../images/l1x_cursor.png), pointer;
-
-            @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
-                cursor: url(../images/l2x_cursor.png), pointer;
-            }
+        cursor: url(../images/cursor.png), pointer;
         }
     }
 }
