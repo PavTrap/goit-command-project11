@@ -27,39 +27,38 @@
   background: linear-gradient(
     to bottom,
     transparent 0%,
-    transparent 27%,
-    var(--brand-green) 27%
+    transparent 25%,
+    var(--brand-green) 25%
   );
 
   padding-left: 20px;
   padding-right: 20px;
-
-  // padding: 40px 20px 60px;
+  padding-bottom: 60px;
 
   @media screen and (min-width: 768px) {
     background: linear-gradient(
       to bottom,
       transparent 0%,
-      transparent 50%,
-      var(--brand-green) 50%
+      transparent 45%,
+      var(--brand-green) 45%
     );
 
     padding-left: 32px;
     padding-right: 32px;
-    // padding: 80px 32px 40px;
+    padding-bottom: 40px;
   }
 
   @media screen and (min-width: 1200px) {
     background: linear-gradient(
       to bottom,
       transparent 0%,
-      transparent 25%,
-      var(--brand-green) 25%
+      transparent 16%,
+      var(--brand-green) 16%
     );
 
     padding-left: 16px;
     padding-right: 16px;
-    // padding: 100px 16px 120px;
+    padding-bottom: 120px;
   }
 }
 
@@ -204,6 +203,11 @@
   @media screen and (min-width: 1200px) {
     font-size: 16px;
     line-height: calc(29 / 16);
+  }
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
   }
 }
 
