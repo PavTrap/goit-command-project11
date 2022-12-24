@@ -83,24 +83,33 @@ background-color: var(--brand-green);
 
 .advantages__item.cow::before {
   background-image: url(../images/advantages/cow1x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
     background-image: url(../images/advantages/cow2x.png);
+    background-repeat: no-repeat;
     background-size: contain;
   }
 }
 
 .advantages__item.weight::before {
   background-image: url(../images/advantages/weight1x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
     background-image: url(../images/advantages/weight2x.png);
+    background-repeat: no-repeat;
     background-size: contain;
   }
 }
 
 .advantages__item.icecrema::before {
   background-image: url(../images/advantages/icecrema1x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){
     background-image: url(../images/advantages/icecrema2x.png);
+    background-repeat: no-repeat;
     background-size: contain;
   }
 }
