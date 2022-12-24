@@ -3,8 +3,8 @@
 .overlay {
    
    /* Скрываем подложку  */
-//    opacity: 0;
-//    visibility: hidden;
+   opacity: 0;
+   visibility: hidden;
    
    position: fixed;
    top: 0;
@@ -25,8 +25,8 @@
 .modal {
    
    /* Скрываем окна  */
-//    opacity: 0;
-//    visibility: hidden;
+   opacity: 0;
+   visibility: hidden;
    
    
    /*  Установаем ширину окна  */
@@ -97,6 +97,9 @@
    font-size: 16px;
    line-height :1.5 ;
    margin-bottom: 31px;
+      @media screen and (max-width:767px) {
+         max-width:142px ;
+   }
    @media screen and (min-width:768px) {
       font-size: 20px;
       line-height: 1.4;
