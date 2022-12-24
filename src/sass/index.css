@@ -47,15 +47,27 @@
     max-width: 1013px;
   }
 }
+.gallery__container:hover .gallery__img {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
 
 .gallery__img--second {
   -webkit-animation-delay: 5s;
           animation-delay: 5s;
 }
+.gallery__container:hover .gallery__img--second {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
 
 .gallery__img--third {
   -webkit-animation-delay: 10s;
           animation-delay: 10s;
+}
+.gallery__container:hover .gallery__img--third {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 
 @-webkit-keyframes changeGallery {
@@ -113,7 +125,7 @@
   background-color: transparent;
   border: 2px solid #f8d24e;
   border-radius: 8px;
-  cursor: pointer;
+  cursor: url(../images/cursor.png), pointer;
 }
 .btn__products:hover, .btn__products:focus {
   border: 2px solid #0a8817;
@@ -135,20 +147,17 @@
 }
 
 .btn__read-more {
-  display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 164px;
   height: 42px;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: calc(18 / 14);
   background: var(--brand-yellow);
   border-radius: 10px;
   color: black;
   border: none;
   margin-left: auto;
   margin-right: auto;
+  cursor: url(../images/cursor.png), pointer;
   transition: background-color 250ms var(--transition-timing-function), outline 250 ms var(--transition-timing-function);
 }
 .btn__read-more:hover {
@@ -170,6 +179,7 @@
   border-radius: 10px;
   border: none;
   color: black;
+  cursor: url(../images/cursor.png), pointer;
 }
 .btn__our-locations:hover {
   background: #0a8817;
@@ -189,7 +199,7 @@
   background-color: transparent;
   border: 2px solid #f8d24e;
   border-radius: 8px;
-  cursor: pointer;
+  cursor: url(../images/cursor.png), pointer;
 }
 .btn__franchise:hover {
   border: 2px solid #0a8817;
@@ -208,6 +218,7 @@
   border-radius: 10px;
   border: none;
   color: black;
+  cursor: url(../images/cursor.png), pointer;
 }
 .btn__buy-now:hover {
   background: #0a8817;
@@ -341,12 +352,6 @@
   width: 280px;
   height: 300px;
 }
-@media screen and (min-width: 480px) {
-  .about__position {
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-}
 @media screen and (min-width: 768px) {
   .about__position {
     width: 330px;
@@ -355,6 +360,7 @@
 }
 @media screen and (min-width: 1200px) {
   .about__position {
+    margin: 0;
     width: 491px;
     height: 529px;
   }
@@ -454,29 +460,14 @@
     line-height: 1.93;
   }
 }
-@media screen and (min-width: 768px) {
-  .about__product {
-    width: 336px;
-    font-size: 16px;
-    line-height: 1.75;
-    text-align: left;
-    margin-bottom: 8px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .about__product {
-    width: 463px;
-    font-size: 14px;
-    line-height: 1.93;
-  }
-}
 
-.about__icon-btn {
-  margin-left: 4px;
-  fill: currentColor;
+@media screen and (max-width: 767px) {
+  .about__choice {
+    display: none;
+  }
 }
 @media screen and (min-width: 768px) {
-  .about__icon-btn {
+  .about__choice {
     width: 336px;
     line-height: 1.92;
     text-align: left;
@@ -485,7 +476,7 @@
   }
 }
 @media screen and (min-width: 1200px) {
-  .about__icon-btn {
+  .about__choice {
     width: 463px;
     font-size: 14px;
     line-height: 1.93;
@@ -510,13 +501,14 @@
   font-weight: 600;
   font-size: 14px;
   line-height: calc(18 / 14);
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   cursor: pointer;
   transition: background-color 250ms var(--transition-timing-function), outline 250ms var(--transition-timing-function), color 250ms var(--transition-timing-function);
 }
 @media screen and (min-width: 768px) {
   .btn__read-more--about {
-    margin-left: 0;
+    margin: 0;
   }
 }
 
@@ -553,6 +545,7 @@ p {
 }
 
 body {
+  cursor: url(../images/cursor.png), default;
   margin: 0 auto;
   font-family: Montserrat, sans-serif;
   font-size: 12px;
