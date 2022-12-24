@@ -7,7 +7,6 @@
                 #ff000000 35%,
                 #ff313100 35%,
               );
-    // background-color: ;
 }
 
 .gallery__container{
@@ -29,8 +28,6 @@
     position: absolute;
     display: block;
     max-width: 100%;
-
-
     left: 0;
     right: 0;
     margin: auto;
@@ -45,19 +42,28 @@
 
     height: 100%;
 
-    animation-name: changeGallery ;
+    animation-name: changeGallery;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-duration: 15s;
-
+    .gallery__container:hover &{
+        animation-play-state: paused;
+    }
 }
+      
 
 .gallery__img--second {
     animation-delay: 5s;
+    .gallery__container:hover &{
+            animation-play-state: paused;
+        }
 }
 
 .gallery__img--third{
     animation-delay: 10s;
+    .gallery__container:hover & {
+            animation-play-state: paused;
+        }
 }
 
 // Animation
