@@ -194,7 +194,7 @@
 }
 
 .products__item--cream {
-  background-color: var(--brand-green);
+  background-color: var(--brand-products-1);
   width: 280px;
   height: 528px;
 
@@ -246,7 +246,7 @@
 }
 
 .products__item--coffee {
-  background-color: var(--brand-yellow);
+  background-color: var(--brand-products-2);
   width: 280px;
   height: 528px;
   border-radius: 24px;
@@ -298,7 +298,7 @@
 
 .products__item--milkshakes {
   padding-bottom: 60px;
-  background-color: var(--brand-brown);
+  background-color: var(--brand-products-3);
   width: 280px;
   height: 528px;
   border-radius: 24px;
@@ -346,4 +346,56 @@
     position: absolute;
     bottom: 21px;
   }
+}
+
+.products__milkshakes {
+  padding-bottom: 60px;
+}
+
+.product__btn {
+  transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.products__icon {
+  width: 40px;
+  height: 20px;
+
+  .product__btn:hover & {
+    width: 50px;
+  }
+
+  .product__btn:focus & {
+    width: 50px;
+  }
+}
+
+.products__svg {
+  &:first-child {
+    display: block;
+
+    .product__btn:focus & {
+      display: none;
+    }
+  }
+
+  &:last-child {
+    display: none;
+
+    .product__btn:focus & {
+      display: block;
+    }
+  }
+}
+
+.product__btn--cream {
+  background-color: var(--brand-green);
+}
+
+.product__btn--coffee {
+  background-color: var(--brand-products-yellow);
+}
+
+.product__btn--milkshakes {
+  background-color: var(--brand-brown);
 }
