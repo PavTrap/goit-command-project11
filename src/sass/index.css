@@ -1,0 +1,300 @@
+@charset "UTF-8";
+@import '~node_modules/modern-normalize/modern-normalize.css';
+.btn__products {
+  width: 108px;
+  height: 38px;
+  background-color: transparent;
+  border: 2px solid #f8d24e;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn__products:hover, .btn__products:focus {
+  border: 2px solid #0a8817;
+  outline: transparent;
+}
+@media screen and (min-width: 1200px) {
+  .btn__products {
+    width: 134px;
+    height: 42px;
+    border-radius: 10px;
+  }
+  .btn__products:hover {
+    border: 2px solid #0a8817;
+  }
+  .btn__products:focus {
+    border: 2px solid #0a8817;
+    color: #fff;
+  }
+}
+
+.btn__read-more {
+  width: 164px;
+  height: 42px;
+  background: #f8d24e;
+  border-radius: 10px;
+  color: black;
+  border: none;
+}
+.btn__read-more:hover {
+  background: #0a8817;
+}
+.btn__read-more:focus {
+  background: #0a8817;
+  color: #fff;
+  outline: transparent;
+}
+
+.btn__our-locations {
+  width: 196px;
+  height: 42px;
+  background: #f8d24e;
+  border-radius: 10px;
+  border: none;
+  color: black;
+}
+.btn__our-locations:hover {
+  background: #0a8817;
+}
+.btn__our-locations:focus {
+  background: #0a8817;
+  color: #fff;
+  outline: transparent;
+}
+
+.btn__franchise {
+  width: 196px;
+  height: 42px;
+  background-color: transparent;
+  border: 2px solid #f8d24e;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn__franchise:hover {
+  border: 2px solid #0a8817;
+}
+.btn__franchise:focus {
+  border: 2px solid #0a8817;
+  color: #fff;
+}
+
+.btn__buy-now {
+  width: 152px;
+  height: 42px;
+  background: #f8d24e;
+  border-radius: 10px;
+  border: none;
+  color: black;
+}
+.btn__buy-now:hover {
+  background: #0a8817;
+}
+.btn__buy-now:focus {
+  background: #0a8817;
+  color: #fff;
+  outline: transparent;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid tomato;
+}
+@media screen and (min-width: 320px) {
+  .container {
+    width: 279px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 704px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1168px;
+  }
+}
+
+.about {
+  padding: 60px 0 50px 0;
+  background-color: #84A178;
+}
+
+.about__uppertitle {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FCFCFC;
+}
+
+.about__title {
+  font-family: "Seymour One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 38px;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FCFCFC;
+}
+
+.about__img {
+  border-radius: 140px;
+}
+
+.about__descriptions {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.76;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #FCFCFC;
+}
+
+.about__product {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.62;
+  text-align: center;
+  color: #FCFCFC;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+:root {
+  --brand-green: #84A178;
+  --brand-yellow: #F8D24E;
+  --brand-black: #131313;
+  --brand-white: #FCFCFC;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media (min-width: 480px) {
+  body {
+    max-width: 1600px;
+    background-repeat: no-repeat;
+    background-position: fixed;
+    background-size: cover;
+    z-index: -1;
+    background-image: url(../images/body_bg/mobile1x.png);
+  }
+}
+@media (min-width: 480px) and (min-device-pixel-ratio: 2), (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 480px) and (min-resolution: 192dpi), (min-width: 480px) and (min-resolution: 2dppx) {
+  body {
+    background-image: url(../images/body_bg/mobile2x.png);
+  }
+}
+@media (min-width: 769px) {
+  body {
+    background-image: url(../images/body_bg/tablet1x.png);
+  }
+}
+@media (min-width: 769px) and (min-device-pixel-ratio: 2), (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 769px) and (min-resolution: 192dpi), (min-width: 769px) and (min-resolution: 2dppx) {
+  body {
+    background-image: url(../images/body_bg/tablet2x.png);
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    background-image: url(../images/body_bg/desktop1x.png);
+  }
+}
+@media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
+  body {
+    background-image: url(../images/body_bg/desktop2x.png);
+  }
+}
+
+/* Стили для подложки */
+.overlay {
+  /* Скрываем подложку  */
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transition: 0.3s all;
+}
+
+/* Стили для модальных окон */
+.modal {
+  /* Скрываем окна  */
+  opacity: 0;
+  visibility: hidden;
+  /*  Установаем ширину окна  */
+  width: 100%;
+  max-width: 500px;
+  /*  Центрируем и задаем z-index */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 30; /* Должен быть выше чем у подложки*/
+  /*  Побочные стили   */
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  padding: 30px;
+  border-radius: 3px;
+  background-color: #fff;
+  transition: 0.3s all;
+}
+
+/* Стили для активных классов подложки и окна */
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Стили для кнопки закрытия */
+.buy-now__button {
+  top: 12px;
+  right: 12px;
+  cursor: pointer;
+  position: absolute;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.modal-close {
+  fill: #000;
+}
+
+/* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
+.buy-now__wrapper {
+  background: #516515;
+}/*# sourceMappingURL=index.css.map */
