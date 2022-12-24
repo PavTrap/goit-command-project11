@@ -59,6 +59,7 @@
   margin-left: auto;
   margin-right: auto;
 
+
   transition: background-color 250ms var(--transition-timing-function), 
   outline 250 ms var(--transition-timing-function);
 
@@ -71,10 +72,6 @@
 
     color: #fff;
     outline: transparent;
-  }
-
-  @media screen and (min-width: 768px) {
-    margin-left: 0;
   }
 }
 
@@ -121,7 +118,7 @@
 }
 
 .btn__buy-now {
-  display: inline-flex;
+  // display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 152px;
