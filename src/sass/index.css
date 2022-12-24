@@ -125,7 +125,6 @@
   background-color: transparent;
   border: 2px solid #f8d24e;
   border-radius: 8px;
-  cursor: url(../images/cursor.png), pointer;
 }
 .btn__products:hover, .btn__products:focus {
   border: 2px solid #0a8817;
@@ -157,7 +156,6 @@
   border: none;
   margin-left: auto;
   margin-right: auto;
-  cursor: url(../images/cursor.png), pointer;
   transition: background-color 250ms var(--transition-timing-function), outline 250 ms var(--transition-timing-function);
 }
 .btn__read-more:hover {
@@ -179,7 +177,6 @@
   border-radius: 10px;
   border: none;
   color: black;
-  cursor: url(../images/cursor.png), pointer;
 }
 .btn__our-locations:hover {
   background: #0a8817;
@@ -199,7 +196,6 @@
   background-color: transparent;
   border: 2px solid #f8d24e;
   border-radius: 8px;
-  cursor: url(../images/cursor.png), pointer;
 }
 .btn__franchise:hover {
   border: 2px solid #0a8817;
@@ -218,7 +214,6 @@
   border-radius: 10px;
   border: none;
   color: black;
-  cursor: url(../images/cursor.png), pointer;
 }
 .btn__buy-now:hover {
   background: #0a8817;
@@ -503,7 +498,6 @@
   line-height: calc(18 / 14);
   margin-left: auto;
   margin-right: auto;
-  cursor: pointer;
   transition: background-color 250ms var(--transition-timing-function), outline 250ms var(--transition-timing-function), color 250ms var(--transition-timing-function);
 }
 @media screen and (min-width: 768px) {
@@ -551,12 +545,15 @@ p {
 }
 
 body {
-  cursor: url(../images/cursor.png), default;
+  cursor: url(../images/cursor.png) 15 15, default;
   margin: 0 auto;
   font-family: Montserrat, sans-serif;
   font-size: 12px;
   letter-spacing: 0.04em;
   color: var(--brand-black);
+}
+body *:hover {
+  cursor: url(../images/cursor.png) 15 15, default;
 }
 @media (min-width: 480px) {
   body {
@@ -1425,6 +1422,9 @@ body {
   width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 12px));
   height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 12px));
 }
+.swiper-pagination-bullet:hover {
+  cursor: inherit;
+}
 
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 9px);
@@ -1822,11 +1822,6 @@ a {
 .nav__link:hover, .nav__link:focus {
   color: var(--brand-yellow);
 }
-@media screen and (min-width: 1200px) {
-  .nav__link:hover, .nav__link:focus {
-    cursor: url(../images/cursor.png), pointer;
-  }
-}
 
 .header__btn {
   display: none;
@@ -1937,7 +1932,6 @@ a {
   height: 13px;
   top: 12px;
   right: 12px;
-  cursor: pointer;
   position: absolute;
 }
 
@@ -2087,7 +2081,6 @@ a {
   height: 13px;
   top: 12px;
   right: 12px;
-  cursor: pointer;
   position: absolute;
 }
 
@@ -2448,7 +2441,6 @@ a {
   height: 13px;
   top: 12px;
   right: 12px;
-  cursor: pointer;
   position: absolute;
 }
 
