@@ -307,7 +307,7 @@
   border: none;
   color: black;
 
-  cursor: pointer;
+  cursor: url(../images/cursor.png) 14 14, default;
 
   transition: background-color 250ms var(--transition-timing-function),
     outline 250ms var(--transition-timing-function),
@@ -331,7 +331,7 @@
   border: 2px solid var(--brand-yellow);
   border-radius: 8px;
 
-  cursor: pointer;
+  cursor: url(../images/cursor.png) 14 14, default;
 
   transition: border 250ms var(--transition-timing-function),
     outline 250ms var(--transition-timing-function),
