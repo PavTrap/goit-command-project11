@@ -1,0 +1,89 @@
+<!-- Несколько модальных окон -->
+<div class="overlay js-overlay-modal">
+    <div class="modal buy-now" data-modal="1">
+    <!--   Svg иконка для закрытия окна  -->
+
+    <svg class="modal__close js-modal-close" xmlns="http://www.w3.org/2000/svg"               viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+        <!-- <button class="buy-now__button">
+            <svg class="modal__close js-modal-close" width="24" height="24">
+        <use href="./images/svg/symbol-defs.svg#close"></use>
+        </svg>
+        </button> -->
+        <h2 class="buy-now__title">Buy now</h2>
+        <ul class="buy-now-products list">
+            <li class="buy-now__item">
+                <div class="buy-now__wrapper">
+                    <img
+                    class="buy-now__img img"
+                    srcset="./images/buy-now/img-1.png 1x, ./images/buy-now/img-1@2x.png 2x"
+                    src="./images/buy-now/img-1.png"
+                    alt="ice cream"
+                    width="132"
+                    height="132"
+                    loading="lazy"
+                    />
+                </div>
+                <p class="buy-now__text">ice cream</p>
+            </li>
+        <li class="buy-now__item buy-now__item--yellow">
+                <div class="buy-now__wrapper buy-now__wrapper--yellow">
+                    <img
+                    class="buy-now__img img"
+                    srcset="./images/buy-now/img-2.png 1x, ./images/buy-now/img-2@2x.png 2x"
+                    src="./images/buy-now/img-2.png"
+                    alt="ice coffee"
+                    width="132"
+                    height="132"
+                    loading="lazy"
+                    />
+                </div>
+                <p class="buy-now__text">ice coffee</p>
+            </li>
+        <li class="buy-now__item buy-now__item--orange">
+                <div class="buy-now__wrapper buy-now__wrapper--orange">
+                    <img
+                    class="buy-now__img img"
+                    srcset="./images/buy-now/img-3.png 1x, ./images/buy-now/img-3@2x.png 2x"
+                    src="./images/buy-now/img-3.png"
+                    alt="milkshake"
+                    width="132"
+                    height="132"
+                    loading="lazy"
+                    />
+                </div>
+                <p class="buy-now__text">milkshake</p>
+            </li>
+        </ul>
+        <form action="" class="buy-now__form">
+			<div class="buy-now__group">
+                <label class="buy-now__label" for="user_name">
+				<input class="buy-now__field" type="text" name="user_name" id="user_name" placeholder=" "  required pattern="[a-zA-Z]{1,15}"/>
+                <span class="buy-now__name">Name</span>
+                </label>
+			</div>
+			<div class="buy-now__group">
+                <label class="buy-now__label" for="user_phone">
+				<input class="buy-now__field" type="tel" name="user_phone" id="user_phone" placeholder=" " required pattern="[1-10]{1-15}"/>
+                <span class="buy-now__name">Phone</span>
+                </label>
+			</div>
+			<div class="buy-now__group">
+                <label class="buy-now__label" for="user_message">
+                <textarea
+                    class="buy-now__message"
+                    name="user_message"
+                    id="user_message"
+                    rows="6"
+                    placeholder=" "
+                ></textarea>
+                <span class="buy-now__placeholder">Comment</span>
+            </label>
+            </div>
+            <button class="buy-now__submit button" type="submit">Submit</button>
+        </form>
+        </div>
+    <!-- Подложка под модальным окном -->
+</div>
+
+
+
