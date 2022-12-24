@@ -104,6 +104,10 @@
     --swiper-pagination-bullet-height,
     var(--swiper-pagination-bullet-size, 12px)
   );
+
+  &:hover {
+    cursor: inherit;
+  }
 }
 .swiper-pagination-horizontal.swiper-pagination-bullets
   .swiper-pagination-bullet {

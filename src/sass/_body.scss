@@ -1,10 +1,14 @@
 body {
-  cursor: url(../images/cursor.png), default;
+  cursor: url(../images/cursor.png) 15 15, default;
   margin: 0 auto;
   font-family: Montserrat, sans-serif;
   font-size: 12px;
   letter-spacing: 0.04em;
   color: var(--brand-black);
+
+  & *:hover{
+    cursor: url(../images/cursor.png) 15 15, default;
+  }
 
   @media (min-width: 480px) {
     max-width: 1600px;
