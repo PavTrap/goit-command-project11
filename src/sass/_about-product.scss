@@ -21,13 +21,13 @@
 
 
 /* Стили для модальных окон */
-
-.modal {
-   
-   /* Скрываем окна  */
+.modal{
    opacity: 0;
    visibility: hidden;
+}
+.about-product{
    
+
    
    /*  Установаем ширину окна  */
    width: 100%;
@@ -48,8 +48,11 @@
    background-color: #FCFCFC;
    transition: 0.3s all;
    border: 2px solid #F8D24E;
-   
-   @media screen and (max-height:991px) {
+       @media screen and (max-height:968px) and (max-width:767px){
+      top: 10px;
+      transform: translate(-50%, 0);
+   }
+   @media screen and (max-height:982px) and (min-width:768px) {
       top: 10px;
       transform: translate(-50%, 0);
    }
