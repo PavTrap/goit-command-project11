@@ -77,12 +77,16 @@
   align-items: center;
   justify-content: center;
 
-  width: 24px;
-  height: 24px;
+  width: 11px;
+  height: 11px;
   color: #131313;
   background-color: #fff;
-  cursor: url(../images/cursor.png), pointer;
+  cursor: url(../images/cursor.png) 14 14, pointer;
   outline: none;
+  @media screen and (min-width: 768px) {
+      width: 14px;
+      height: 14px;
+    }
 }
 
 .icon-button {
