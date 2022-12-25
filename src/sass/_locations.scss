@@ -27,23 +27,24 @@
 }
 
 .modal-locations {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
 
   width: 280px;
-  height: 365px;
-  padding: 28px;
+  height: 373px;
+  padding: 28px 28px;
   background-color: #fcfcfc;
   border: 2px solid #f8d24e;
   border-radius: 10px;
   z-index: 999;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 767px) {
     width: 568px;
-    height: 458px;
-    padding: 32px, 60px;
+    // height: 458px;
+    height: 471px;
+    padding: 32px 60px;
   }
 }
 
@@ -57,7 +58,7 @@
 
   color: #131313;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 767px) {
     font-size: 20px;
     line-height: 1.7;
     margin-bottom: 32px;
@@ -87,12 +88,16 @@
   align-items: center;
   justify-content: center;
 
-  width: 24px;
-  height: 24px;
+  width: 11px;
+  height: 11px;
   color: #131313;
-  background-color: #fff;
+  // background-color: #fff;
   cursor: url(../images/cursor.png), pointer;
   outline: none;
+  @media screen and (min-width: 768px) {
+    width: 14px;
+    height: 14px;
+  }
 }
 
 .icon-button {
