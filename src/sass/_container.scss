@@ -1,7 +1,7 @@
 .container {
     margin-left: auto;
     margin-right: auto;
-    outline: 1px solid tomato;
+    // outline: 1px solid tomato;
 
     width: 100%;
     @media screen and (max-width: 479px){
@@ -20,4 +20,5 @@
     @media screen and (min-width: 1200px) {
         width: 1168px;
     }
+       
 }
