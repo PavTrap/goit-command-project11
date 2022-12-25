@@ -19,7 +19,7 @@
 }
 
 .hero_overlay {
-  background-color: var(--brand-header);
+  background-color: var(--brand-green);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: bottom center;
@@ -125,4 +125,244 @@
   display: flex;
   align-items: center;
   gap: 34px;
+}
+
+.products-anchor .link-products {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+
+  width: 104px;
+  height: 34px;
+
+  background-color: transparent;
+  border: 2px solid var(--brand-yellow);
+  border-radius: 8px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  color: var(--brand-black);
+  text-decoration: none;
+
+  cursor: url(../images/cursor.png), pointer;
+
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--transition-timing-function);
+
+  &:hover,
+  &:focus {
+    border: 2px solid #0a8817;
+    outline: transparent;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 130px;
+    height: 38px;
+
+    border-radius: 10px;
+  }
+
+  &:hover {
+    border: 2px solid #0a8817;
+  }
+
+  &:focus {
+    border: 2px solid #0a8817;
+    color: var(--brand-menu);
+  }
+  &:disabled {
+    border-color: #ababab;
+  }
+}
+
+.link-made {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+
+  color: var(--brand-yellow);
+  cursor: url(../images/cursor.png), pointer;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--transition-timing-function);
+
+  @media screen and (min-width: 1200px) {
+    width: 134px;
+    height: 42px;
+    padding: 12px 34px;
+    border-radius: 10px;
+    padding-left: 16px;
+
+    @media screen and (max-width: 767px) {
+      padding-left: 20px;
+    }
+
+    @media screen and (max-width: 1199px) {
+      padding-left: 32px;
+    }
+  }
+  &:hover {
+    color: #0a8817;
+  }
+
+  &:focus {
+    color: var(--brand-menu);
+  }
+  &:disabled {
+    color: #ababab;
+  }
+}
+
+.info-with-arrow__list {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.many-ice-cream__wrap .many-ice-cream__img {
+  display: block;
+  @media screen and (min-width: 768px) {
+    width: 152px;
+
+    @media screen and (min-width: 1200px) {
+      width: 225px;
+    }
+  }
+}
+
+.info-with-arrow__text {
+  position: relative;
+  display: block;
+  align-items: center;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.42;
+  font-size: 12px;
+  width: 139px;
+
+  color: var(--brand-white);
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    width: 200px;
+  }
+}
+
+.info-with-arrow__text::after {
+  position: absolute;
+  content: '';
+  width: 40px;
+  height: 16px;
+  background-size: contain;
+  margin-top: 40px;
+  left: 0;
+  background-image: url(../images/hero/Arrow.png);
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/hero/Arrow2x.png);
+  }
+}
+
+.container-center {
+  display: block;
+  align-items: bottom;
+}
+
+.container-center .ice-creame-conus {
+  position: absolute;
+  width: 177px;
+  bottom: 0;
+  align-items: bottom;
+  right: 0;
+  margin-right: 60px;
+
+  @media screen and (min-width: 768px) {
+    width: 268px;
+    margin-right: 92px;
+
+    @media screen and (min-width: 1200px) {
+      width: 456px;
+    }
+  }
+}
+
+.container-right {
+  position: relative;
+  display: flex;
+}
+
+.ownership {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  padding-top: 28px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 53px;
+  }
+}
+.ownership__list {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  gap: 20px;
+  right: 0;
+
+  @media screen and (min-width: 1200px) {
+    gap: 16px;
+  }
+}
+
+.ownership__item {
+  display: block;
+  @media screen and (min-width: 1200px) {
+    width: 79px;
+  }
+}
+.ownership__amaunt {
+  display: block;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 1.21;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--brand-black);
+  @media screen and (min-width: 1200px) {
+    width: 79px;
+    font-size: 46px;
+  }
+}
+
+.ownership__detail {
+  display: block;
+  width: 46px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: right;
+
+  color: var(--brand-white);
+
+  @media screen and (min-width: 1200px) {
+    width: 79px;
+    font-size: 14px;
+    line-height: 1.21;
+  }
 }
