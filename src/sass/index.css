@@ -125,7 +125,6 @@
   background-color: transparent;
   border: 2px solid #f8d24e;
   border-radius: 8px;
-  cursor: url(../images/cursor.png), pointer;
 }
 .btn__products:hover, .btn__products:focus {
   border: 2px solid #0a8817;
@@ -157,7 +156,6 @@
   border: none;
   margin-left: auto;
   margin-right: auto;
-  cursor: url(../images/cursor.png), pointer;
   transition: background-color 250ms var(--transition-timing-function), outline 250 ms var(--transition-timing-function);
 }
 .btn__read-more:hover {
@@ -179,7 +177,6 @@
   border-radius: 10px;
   border: none;
   color: black;
-  cursor: url(../images/cursor.png), pointer;
 }
 .btn__our-locations:hover {
   background: #0a8817;
@@ -199,7 +196,6 @@
   background-color: transparent;
   border: 2px solid #f8d24e;
   border-radius: 8px;
-  cursor: url(../images/cursor.png), pointer;
 }
 .btn__franchise:hover {
   border: 2px solid #0a8817;
@@ -218,7 +214,6 @@
   border-radius: 10px;
   border: none;
   color: black;
-  cursor: url(../images/cursor.png), pointer;
 }
 .btn__buy-now:hover {
   background: #0a8817;
@@ -503,7 +498,6 @@
   line-height: calc(18 / 14);
   margin-left: auto;
   margin-right: auto;
-  cursor: pointer;
   transition: background-color 250ms var(--transition-timing-function), outline 250ms var(--transition-timing-function), color 250ms var(--transition-timing-function);
 }
 @media screen and (min-width: 768px) {
@@ -551,12 +545,15 @@ p {
 }
 
 body {
-  cursor: url(../images/cursor.png), default;
+  cursor: url(../images/cursor.png) 15 15, default;
   margin: 0 auto;
   font-family: Montserrat, sans-serif;
   font-size: 12px;
   letter-spacing: 0.04em;
   color: var(--brand-black);
+}
+body *:hover {
+  cursor: url(../images/cursor.png) 15 15, default;
 }
 @media (min-width: 480px) {
   body {
@@ -1014,17 +1011,25 @@ body {
 }
 
 .contacts {
-  background-color: #84a178;
-  padding: 40px 20px 60px;
+  background: linear-gradient(to bottom, transparent 0%, transparent 25%, var(--brand-green) 25%);
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 60px;
 }
 @media screen and (min-width: 768px) {
   .contacts {
-    padding: 80px 32px 40px;
+    background: linear-gradient(to bottom, transparent 0%, transparent 45%, var(--brand-green) 45%);
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 40px;
   }
 }
 @media screen and (min-width: 1200px) {
   .contacts {
-    padding: 100px 16px 120px;
+    background: linear-gradient(to bottom, transparent 0%, transparent 16%, var(--brand-green) 16%);
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 120px;
   }
 }
 
@@ -1050,7 +1055,7 @@ body {
 }
 
 .contacts__item {
-  background: #fcfcfc;
+  background: var(--brand-white);
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
 }
@@ -1099,17 +1104,17 @@ body {
   min-width: 80px;
   padding: 4px 22px;
   align-items: center;
-  background: #f8d24e;
+  background: var(--brand-yellow);
   border-radius: 4px;
   margin-bottom: 20px;
-  font-family: "Montserrat";
+  font-family: inherit;
   font-weight: 500;
   font-size: 12px;
   line-height: calc(14 / 12);
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
-  color: #131313;
+  color: var(--brand-black);
 }
 @media screen and (min-width: 768px) {
   .category__title {
@@ -1132,12 +1137,12 @@ body {
 }
 
 .adress__title {
-  font-family: "Montserrat";
+  font-family: inherit;
   font-weight: 500;
   font-size: 12px;
   line-height: calc(22 / 12);
   letter-spacing: 0.04em;
-  color: #131313;
+  color: var(--brand-black);
   margin-bottom: 8px;
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1159,12 +1164,13 @@ body {
 }
 
 .adress__link {
-  font-family: "Montserrat";
+  font-family: inherit;
   font-weight: 500;
   font-size: 12px;
   line-height: calc(22 / 12);
   letter-spacing: 0.04em;
   color: #d6936d;
+  cursor: url(../images/cursor.png), pointer;
 }
 @media screen and (min-width: 768px) {
   .adress__link {
@@ -1178,13 +1184,16 @@ body {
     line-height: calc(29 / 16);
   }
 }
+.adress__link:hover, .adress__link:focus {
+  text-decoration: underline;
+}
 
 .week__title {
-  font-family: "Montserrat";
+  font-family: inherit;
   font-weight: 500;
   font-size: 12px;
   line-height: calc(22 / 12);
-  color: #131313;
+  color: var(--brand-black);
 }
 @media screen and (min-width: 768px) {
   .week__title {
@@ -1200,7 +1209,7 @@ body {
 }
 
 .week__time {
-  font-family: "Montserrat";
+  font-family: inherit;
   font-weight: 500;
   font-size: 12px;
   line-height: calc(22 / 12);
@@ -1222,7 +1231,7 @@ body {
 }
 
 .category-contacts__item {
-  font-family: "Montserrat";
+  font-family: inherit;
   font-weight: 500;
   font-size: 12px;
   line-height: calc(19 / 12);
@@ -1241,7 +1250,7 @@ body {
 }
 
 .category-contacts__link--phone {
-  color: #131313;
+  color: var(--brand-black);
   margin-bottom: 6px;
 }
 @media screen and (min-width: 1200px) {
@@ -1251,11 +1260,11 @@ body {
 }
 
 .category-contacts__link--mail {
-  color: #131313;
+  color: var(--brand-black);
 }
 
 .btn__list {
-  font-family: "Montserrat";
+  font-family: inherit;
   font-weight: 600;
   font-size: 14px;
   line-height: calc(18 / 14);
@@ -1274,10 +1283,12 @@ body {
 .btn__our-locations {
   width: 196px;
   height: 42px;
-  background: #f8d24e;
+  background: var(--brand-yellow);
   border-radius: 10px;
   border: none;
   color: black;
+  cursor: url(../images/cursor.png) 14 14, default;
+  transition: background-color 250ms var(--transition-timing-function), outline 250ms var(--transition-timing-function), color 250ms var(--transition-timing-function);
 }
 .btn__our-locations:hover {
   background: #0a8817;
@@ -1292,9 +1303,10 @@ body {
   width: 196px;
   height: 42px;
   background-color: transparent;
-  border: 2px solid #f8d24e;
+  border: 2px solid var(--brand-yellow);
   border-radius: 8px;
-  cursor: pointer;
+  cursor: url(../images/cursor.png) 14 14, default;
+  transition: border 250ms var(--transition-timing-function), outline 250ms var(--transition-timing-function), color 250ms var(--transition-timing-function);
 }
 .btn__franchise:hover {
   border: 2px solid #0a8817;
@@ -1409,6 +1421,9 @@ body {
 .swiper-pagination-bullet {
   width: var(--swiper-pagination-bullet-width, var(--swiper-pagination-bullet-size, 12px));
   height: var(--swiper-pagination-bullet-height, var(--swiper-pagination-bullet-size, 12px));
+}
+.swiper-pagination-bullet:hover {
+  cursor: inherit;
 }
 
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
@@ -1807,11 +1822,6 @@ a {
 .nav__link:hover, .nav__link:focus {
   color: var(--brand-yellow);
 }
-@media screen and (min-width: 1200px) {
-  .nav__link:hover, .nav__link:focus {
-    cursor: url(../images/cursor.png), pointer;
-  }
-}
 
 .header__btn {
   display: none;
@@ -1922,7 +1932,6 @@ a {
   height: 13px;
   top: 12px;
   right: 12px;
-  cursor: pointer;
   position: absolute;
 }
 
@@ -2072,7 +2081,6 @@ a {
   height: 13px;
   top: 12px;
   right: 12px;
-  cursor: pointer;
   position: absolute;
 }
 
@@ -2433,7 +2441,6 @@ a {
   height: 13px;
   top: 12px;
   right: 12px;
-  cursor: pointer;
   position: absolute;
 }
 
@@ -2732,30 +2739,39 @@ a {
 
 .advantages__item.cow::before {
   background-image: url(../images/advantages/cow1x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .advantages__item.cow::before {
     background-image: url(../images/advantages/cow2x.png);
+    background-repeat: no-repeat;
     background-size: contain;
   }
 }
 
 .advantages__item.weight::before {
   background-image: url(../images/advantages/weight1x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .advantages__item.weight::before {
     background-image: url(../images/advantages/weight2x.png);
+    background-repeat: no-repeat;
     background-size: contain;
   }
 }
 
 .advantages__item.icecrema::before {
   background-image: url(../images/advantages/icecrema1x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .advantages__item.icecrema::before {
     background-image: url(../images/advantages/icecrema2x.png);
+    background-repeat: no-repeat;
     background-size: contain;
   }
 }
