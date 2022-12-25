@@ -1,7 +1,7 @@
 .hero_overlay {
   display: flex;
   justify-content: space-between;
-  width: 1600px;
+  width: 100%;
   background-color: var(--brand-green);
   background-size: 100%;
 
@@ -12,13 +12,13 @@
   }
 
   @media screen and (min-width: 768px) {
-    // padding-left: 32px;
-    // padding-right: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   @media screen and (min-width: 1200px) {
-    // padding-left: 16px;
-    // padding-right: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 
   margin-left: auto;
@@ -27,13 +27,16 @@
 
 .container__hero {
   display: flex;
+  // flex-direction: column;
   justify-content: space-between;
 
   background-color: var(--brand-green);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: bottom center;
+  height: 100%;
   @media screen and (max-width: 767px) {
+    flex-direction: row;
     background-image: url(../images/hero/dots-mobile.png);
 
     @media (min-device-pixel-ratio: 2),

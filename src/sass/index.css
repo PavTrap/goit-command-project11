@@ -2,7 +2,7 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 .gallery {
   padding-bottom: 12px;
-  background-image: linear-gradient(to bottom, var(--brand-green) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 0, 0, 0) 35%, rgba(255, 49, 49, 0) 35%);
+  background-image: linear-gradient(to bottom, var(--brand-green) 25%, #ffffff00 25%, #ff000000 35%, #ff313100 35%);
 }
 
 .gallery__container {
@@ -142,7 +142,7 @@
   height: 42px;
   font-weight: 600;
   font-size: 14px;
-  line-height: 1.2857142857;
+  line-height: calc(18 / 14);
   background: var(--brand-yellow);
   border-radius: 10px;
   color: black;
@@ -509,7 +509,7 @@
   display: block;
   font-weight: 600;
   font-size: 14px;
-  line-height: 1.2857142857;
+  line-height: calc(18 / 14);
   margin: auto;
   cursor: pointer;
   transition: background-color 250ms var(--transition-timing-function), outline 250ms var(--transition-timing-function), color 250ms var(--transition-timing-function);
@@ -712,7 +712,7 @@ body {
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.1666666667;
+  line-height: calc(14 / 12);
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
@@ -721,7 +721,7 @@ body {
 @media screen and (min-width: 768px) {
   .category__title {
     font-size: 16px;
-    line-height: 1.375;
+    line-height: calc(22 / 16);
     margin-bottom: 32px;
   }
 }
@@ -742,7 +742,7 @@ body {
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.8333333333;
+  line-height: calc(22 / 12);
   letter-spacing: 0.04em;
   color: #131313;
   margin-bottom: 8px;
@@ -755,13 +755,13 @@ body {
 @media screen and (min-width: 768px) {
   .adress__title {
     font-size: 14px;
-    line-height: 1.8571428571;
+    line-height: calc(26 / 14);
   }
 }
 @media screen and (min-width: 1200px) {
   .adress__title {
     font-size: 16px;
-    line-height: 1.875;
+    line-height: calc(30 / 16);
   }
 }
 
@@ -769,20 +769,20 @@ body {
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.8333333333;
+  line-height: calc(22 / 12);
   letter-spacing: 0.04em;
   color: #d6936d;
 }
 @media screen and (min-width: 768px) {
   .adress__link {
     font-size: 14px;
-    line-height: 1.8571428571;
+    line-height: calc(26 / 14);
   }
 }
 @media screen and (min-width: 1200px) {
   .adress__link {
     font-size: 16px;
-    line-height: 1.8125;
+    line-height: calc(29 / 16);
   }
 }
 
@@ -790,19 +790,19 @@ body {
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.8333333333;
+  line-height: calc(22 / 12);
   color: #131313;
 }
 @media screen and (min-width: 768px) {
   .week__title {
     font-size: 14px;
-    line-height: 1.8571428571;
+    line-height: calc(26 / 14);
   }
 }
 @media screen and (min-width: 1200px) {
   .week__title {
     font-size: 16px;
-    line-height: 1.875;
+    line-height: calc(30 / 16);
   }
 }
 
@@ -810,20 +810,20 @@ body {
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.8333333333;
+  line-height: calc(22 / 12);
   color: #ababab;
   margin-bottom: 8px;
 }
 @media screen and (min-width: 768px) {
   .week__time {
     font-size: 14px;
-    line-height: 1.8571428571;
+    line-height: calc(26 / 14);
   }
 }
 @media screen and (min-width: 1200px) {
   .week__time {
     font-size: 16px;
-    line-height: 1.875;
+    line-height: calc(30 / 16);
     margin-bottom: 12px;
   }
 }
@@ -832,18 +832,18 @@ body {
   font-family: "Montserrat";
   font-weight: 500;
   font-size: 12px;
-  line-height: 1.5833333333;
+  line-height: calc(19 / 12);
 }
 @media screen and (min-width: 768px) {
   .category-contacts__item {
     font-size: 14px;
-    line-height: 1.5;
+    line-height: calc(21 / 14);
   }
 }
 @media screen and (min-width: 1200px) {
   .category-contacts__item {
     font-size: 16px;
-    line-height: 1.5;
+    line-height: calc(24 / 16);
   }
 }
 
@@ -865,7 +865,7 @@ body {
   font-family: "Montserrat";
   font-weight: 600;
   font-size: 14px;
-  line-height: 1.2857142857;
+  line-height: calc(18 / 14);
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -1152,7 +1152,7 @@ body {
 .hero_overlay {
   display: flex;
   justify-content: space-between;
-  width: 1600px;
+  width: 100%;
   background-color: var(--brand-green);
   background-size: 100%;
   margin-left: auto;
@@ -1164,6 +1164,19 @@ body {
     flex-direction: column;
   }
 }
+@media screen and (min-width: 768px) {
+  .hero_overlay {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero_overlay {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
 .container__hero {
   display: flex;
   justify-content: space-between;
@@ -1171,9 +1184,11 @@ body {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: bottom center;
+  height: 100%;
 }
 @media screen and (max-width: 767px) {
   .container__hero {
+    flex-direction: row;
     background-image: url(../images/hero/dots-mobile.png);
   }
 }
@@ -1599,7 +1614,7 @@ body {
   height: 42px;
   font-weight: 600;
   font-size: 14px;
-  line-height: 1.2857142857;
+  line-height: calc(18 / 14);
   background: var(--brand-yellow);
   border-radius: 10px;
   color: black;
@@ -1798,7 +1813,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.2222222222;
+  line-height: calc(44/36);
   /* identical to box height */
   text-align: center;
   letter-spacing: 0.04em;
@@ -1808,14 +1823,14 @@ body {
 @media (min-width: 769px) {
   .advantages__item__title {
     font-size: 48px;
-    line-height: 1.2291666667;
+    line-height: calc(59/48);
     margin-bottom: 12px;
   }
 }
 @media (min-width: 1200px) {
   .advantages__item__title {
     font-size: 58px;
-    line-height: 1.224137931;
+    line-height: calc(71/58);
     margin-bottom: 12px;
   }
 }
@@ -1825,7 +1840,7 @@ body {
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
-  line-height: 1.6666666667;
+  line-height: calc(20/12);
   /* or 20px */
   text-align: center;
   color: var(--brand-white);

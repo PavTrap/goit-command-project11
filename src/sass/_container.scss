@@ -1,23 +1,23 @@
 .container {
-    margin-left: auto;
-    margin-right: auto;
-    outline: 1px solid tomato;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid tomato;
 
-    width: 100%;
-    @media screen and (max-width: 479px){
-            padding-left: 20px;
-            padding-right: 20px;
-    }
+  width: 100%;
+  @media screen and (max-width: 479px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 
-    @media screen and (min-width: 480px) {
-        width: 440px;
-    }
+  @media screen and (min-width: 480px) {
+    width: 440px;
+  }
 
-    @media screen and (min-width: 768px) {
-        width: 704px;
-    }
+  @media screen and (min-width: 768px) {
+    width: 704px;
+  }
 
-    @media screen and (min-width: 1200px) {
-        width: 1168px;
-    }
+  @media screen and (min-width: 1200px) {
+    width: 1168px;
+  }
 }
