@@ -1,10 +1,17 @@
-<div class="backdrop is-hidden" data-modal="4">
-  <div class="modal-franchise">
-    <button data-modal-close class="button-close">
-      <svg class="icon-button js-modal-close" width="24" height="24">
-        <use href="./images/icons.svg#icon-clarity_close-line"></use>
+<div class="modal modal-franchise" data-modal="4">
+
+    <!-- <button class="button-close"> -->
+      <svg
+        data-modal-close
+        class="modal__close js-modal-close"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
+        />
       </svg>
-    </button>
+    <!-- </button> -->
     <p class="modal_label">
       Thank you for your interest in owning an Ice Cream shop
     </p>
@@ -63,5 +70,9 @@
       </div>
       <button class="form-btn" type="submit">Submit</button>
     </form>
+
   </div>
+
 </div>
+
+<div class="overlay js-overlay-modal"></div>
