@@ -19,8 +19,6 @@
   border: 2px solid #f8d24e;
   border-radius: 8px;
 
-  cursor: url(../images/cursor.png), pointer;
-
   &:hover,
   &:focus {
     border: 2px solid #0a8817;
@@ -56,8 +54,6 @@
   margin-left: auto;
   margin-right: auto;
 
-  cursor: url(../images/cursor.png), pointer;
-
   transition: background-color 250ms var(--transition-timing-function),
     outline 250 ms var(--transition-timing-function);
 
@@ -84,7 +80,6 @@
   border: none;
   color: black;
 
-  cursor: url(../images/cursor.png), pointer;
   &:hover {
     background: #0a8817;
   }
@@ -104,8 +99,6 @@
   background-color: transparent;
   border: 2px solid #f8d24e;
   border-radius: 8px;
-
-  cursor: url(../images/cursor.png), pointer;
 
   &:hover {
     border: 2px solid #0a8817;
@@ -128,7 +121,6 @@
   border: none;
   color: black;
 
-  cursor: url(../images/cursor.png), pointer;
   &:hover {
     background: #0a8817;
   }

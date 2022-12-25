@@ -74,9 +74,6 @@
     &:focus {
       color: var(--brand-yellow);
 
-      @media screen and (min-width: 1200px){
-        cursor: url(../images/cursor.png), pointer;
-        }
     }
 }
 
