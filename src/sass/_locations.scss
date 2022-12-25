@@ -45,7 +45,6 @@
     // height: 458px;
     height: 471px;
     padding: 32px 60px;
-  }
 }
 
 .modal-locations_label {
@@ -68,6 +67,7 @@
 .map {
   height: 200px;
   width: 100%;
+ 
   margin-bottom: 24px;
   border-radius: 10px;
 
@@ -138,8 +138,8 @@
   }
 
   @media screen and (min-width: 768px) {
+    min-width: 145px;
     font-size: 14px;
     line-height: 1.2;
-    min-width: 145px;
   }
 }
