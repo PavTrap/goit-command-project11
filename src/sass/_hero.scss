@@ -1,23 +1,33 @@
 .hero_overlay {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
+  width: 1600px;
+  background-color: var(--brand-green);
+  background-size: 100%;
 
   @media screen and (max-width: 767px) {
     height: 454px;
-    padding-left: 20px;
+    // padding-left: 20px;
     flex-direction: column;
   }
 
   @media screen and (min-width: 768px) {
-    padding-left: 32px;
-    padding-right: 32px;
+    // padding-left: 32px;
+    // padding-right: 32px;
   }
 
   @media screen and (min-width: 1200px) {
-    padding-left: 16px;
-    padding-right: 16px;
+    // padding-left: 16px;
+    // padding-right: 16px;
   }
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container__hero {
+  display: flex;
+  justify-content: space-between;
 
   background-color: var(--brand-green);
   background-size: 100%;
@@ -41,9 +51,6 @@
       (min-resolution: 2dppx) {
       background-image: url(../images/hero/dots-tablet2x.png);
     }
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: bottom center;
   }
 
   @media screen and (min-width: 1200px) {
@@ -53,16 +60,9 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(../images/hero/dots_desktop2x.png);
-
-      background-size: 100%;
-      background-repeat: no-repeat;
-      background-position: bottom center;
     }
   }
-  margin-left: auto;
-  margin-right: auto;
 }
-
 .hero_container {
   position: relative;
   display: flex;
@@ -309,8 +309,12 @@
   }
 }
 
+.container-right {
+  position: relative;
+  display: flex;
+}
 .container-center {
-  // display: block;
+  display: block;
   align-items: bottom;
 }
 
@@ -333,11 +337,6 @@
   }
 }
 
-.container-right {
-  position: relative;
-  display: flex;
-}
-
 .ownership {
   @media screen and (max-width: 767px) {
     display: none;
@@ -354,6 +353,7 @@
   flex-direction: column;
   gap: 20px;
   right: 0;
+  top: 0;
 
   @media screen and (min-width: 1200px) {
     gap: 16px;

@@ -1152,67 +1152,54 @@ body {
 .hero_overlay {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
+  width: 1600px;
   background-color: var(--brand-green);
   background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: bottom center;
   margin-left: auto;
   margin-right: auto;
 }
 @media screen and (max-width: 767px) {
   .hero_overlay {
     height: 454px;
-    padding-left: 20px;
     flex-direction: column;
   }
 }
-@media screen and (min-width: 768px) {
-  .hero_overlay {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .hero_overlay {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
+.container__hero {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--brand-green);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom center;
 }
 @media screen and (max-width: 767px) {
-  .hero_overlay {
+  .container__hero {
     background-image: url(../images/hero/dots-mobile.png);
   }
 }
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
-  .hero_overlay {
+  .container__hero {
     background-image: url(../images/hero/dots-mobile2x.png);
   }
 }
 @media screen and (min-width: 768px) {
-  .hero_overlay {
+  .container__hero {
     background-image: url(../images/hero/dots-tablet.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: bottom center;
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
-  .hero_overlay {
+  .container__hero {
     background-image: url(../images/hero/dots-tablet2x.png);
   }
 }
 @media screen and (min-width: 1200px) {
-  .hero_overlay {
+  .container__hero {
     background-image: url(../images/hero/dots_desktop.png);
   }
 }
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
-  .hero_overlay {
+  .container__hero {
     background-image: url(../images/hero/dots_desktop2x.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: bottom center;
   }
 }
 
@@ -1456,7 +1443,13 @@ body {
   }
 }
 
+.container-right {
+  position: relative;
+  display: flex;
+}
+
 .container-center {
+  display: block;
   align-items: bottom;
 }
 
@@ -1481,11 +1474,6 @@ body {
   }
 }
 
-.container-right {
-  position: relative;
-  display: flex;
-}
-
 .ownership {
   padding-top: 28px;
 }
@@ -1506,6 +1494,7 @@ body {
   flex-direction: column;
   gap: 20px;
   right: 0;
+  top: 0;
 }
 @media screen and (min-width: 1200px) {
   .ownership__list {
