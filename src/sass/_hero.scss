@@ -1,6 +1,8 @@
 .hero_overlay {
   display: flex;
   justify-content: space-between;
+  max-width: 1200px;
+
   @media screen and (max-width: 767px) {
     height: 454px;
     padding-left: 20px;
@@ -16,9 +18,7 @@
     padding-left: 16px;
     padding-right: 16px;
   }
-}
 
-.hero_overlay {
   background-color: var(--brand-green);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -100,14 +100,42 @@
   max-width: 247px;
   padding-top: 50px;
 
-  font-size: 34px;
-  margin-bottom: 32px;
+  font-size: 26px;
   color: var(--brand-white);
 
   @media screen and (min-width: 768px) {
     max-width: 247px;
     padding-top: 14px;
     font-size: 26px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 367px;
+    padding-top: 45px;
+
+    font-size: 38px;
+    line-height: 1.26;
+  }
+}
+.hero-title__passion {
+  display: block;
+  box-sizing: content-box;
+  font-family: 'Seymour One';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.27;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  max-width: 247px;
+
+  font-size: 34px;
+  margin-bottom: 32px;
+  color: var(--brand-white);
+
+  @media screen and (min-width: 768px) {
+    max-width: 247px;
+
+    font-size: 34px;
     margin-bottom: 24px;
   }
 
@@ -257,6 +285,7 @@
   font-weight: 400;
   line-height: 1.42;
   font-size: 12px;
+  letter-spacing: 0em;
   width: 139px;
 
   color: var(--brand-white);
@@ -283,7 +312,7 @@
 }
 
 .container-center {
-  display: block;
+  // display: block;
   align-items: bottom;
 }
 
@@ -294,6 +323,7 @@
   align-items: bottom;
   right: 0;
   margin-right: 60px;
+  max-width: none;
 
   @media screen and (min-width: 768px) {
     width: 268px;
@@ -365,6 +395,7 @@
   font-size: 8px;
   line-height: 1.25;
   text-align: right;
+  letter-spacing: 0em;
 
   color: var(--brand-white);
 

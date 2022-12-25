@@ -1152,6 +1152,13 @@ body {
 .hero_overlay {
   display: flex;
   justify-content: space-between;
+  max-width: 1200px;
+  background-color: var(--brand-green);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (max-width: 767px) {
   .hero_overlay {
@@ -1171,15 +1178,6 @@ body {
     padding-left: 16px;
     padding-right: 16px;
   }
-}
-
-.hero_overlay {
-  background-color: var(--brand-green);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  margin-left: auto;
-  margin-right: auto;
 }
 @media screen and (max-width: 767px) {
   .hero_overlay {
@@ -1255,8 +1253,7 @@ body {
   text-transform: uppercase;
   max-width: 247px;
   padding-top: 50px;
-  font-size: 34px;
-  margin-bottom: 32px;
+  font-size: 26px;
   color: var(--brand-white);
 }
 @media screen and (min-width: 768px) {
@@ -1264,11 +1261,40 @@ body {
     max-width: 247px;
     padding-top: 14px;
     font-size: 26px;
-    margin-bottom: 24px;
   }
 }
 @media screen and (min-width: 1200px) {
   .hero-title {
+    max-width: 367px;
+    padding-top: 45px;
+    font-size: 38px;
+    line-height: 1.26;
+  }
+}
+
+.hero-title__passion {
+  display: block;
+  box-sizing: content-box;
+  font-family: "Seymour One";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.27;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  max-width: 247px;
+  font-size: 34px;
+  margin-bottom: 32px;
+  color: var(--brand-white);
+}
+@media screen and (min-width: 768px) {
+  .hero-title__passion {
+    max-width: 247px;
+    font-size: 34px;
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-title__passion {
     max-width: 367px;
     padding-top: 45px;
     margin-bottom: 28px;
@@ -1404,6 +1430,7 @@ body {
   font-weight: 400;
   line-height: 1.42;
   font-size: 12px;
+  letter-spacing: 0em;
   width: 139px;
   color: var(--brand-white);
 }
@@ -1431,7 +1458,6 @@ body {
 }
 
 .container-center {
-  display: block;
   align-items: bottom;
 }
 
@@ -1442,6 +1468,7 @@ body {
   align-items: bottom;
   right: 0;
   margin-right: 60px;
+  max-width: none;
 }
 @media screen and (min-width: 768px) {
   .container-center .ice-creame-conus {
@@ -1524,6 +1551,7 @@ body {
   font-size: 8px;
   line-height: 1.25;
   text-align: right;
+  letter-spacing: 0em;
   color: var(--brand-white);
 }
 @media screen and (min-width: 1200px) {
