@@ -43,7 +43,10 @@
   @media screen and (min-width: 768px) {
     width: 568px;
     height: 458px;
-    padding: 32px, 60px;
+    padding-top: 32px;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-bottom: 32px;
   }
 }
 
@@ -67,6 +70,7 @@
 .map {
   height: 200px;
   width: 100%;
+ 
   margin-bottom: 24px;
   border-radius: 10px;
 
@@ -133,8 +137,8 @@
   }
 
   @media screen and (min-width: 768px) {
+    min-width: 145px;
     font-size: 14px;
     line-height: 1.2;
-    min-width: 145px;
   }
 }
