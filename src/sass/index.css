@@ -1872,7 +1872,7 @@ a {
   height: 100vh;
   padding: 20px 32px 32px 20px;
   background-color: var(--brand-green);
-  z-index: 999;
+  z-index: 899;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
