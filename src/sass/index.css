@@ -232,8 +232,8 @@
 }
 @media screen and (max-width: 479px) {
   .container {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 @media screen and (min-width: 480px) {
@@ -244,11 +244,15 @@
 @media screen and (min-width: 768px) {
   .container {
     width: 704px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 }
 @media screen and (min-width: 1200px) {
   .container {
     width: 1168px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
@@ -1950,6 +1954,422 @@ a {
 @media screen and (min-width: 768px) {
   .menu__btn {
     display: none;
+  }
+}
+
+.hero_overlay {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--brand-green);
+  background-size: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 767px) {
+  .hero_overlay {
+    height: 454px;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero_overlay {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero_overlay {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.container__hero {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--brand-green);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  height: 100%;
+}
+@media screen and (max-width: 767px) {
+  .container__hero {
+    flex-direction: row;
+    background-image: url(../images/hero/dots-mobile.png);
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .container__hero {
+    background-image: url(../images/hero/dots-mobile2x.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .container__hero {
+    background-image: url(../images/hero/dots-tablet.png);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .container__hero {
+    background-image: url(../images/hero/dots-tablet2x.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container__hero {
+    background-image: url(../images/hero/dots_desktop.png);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .container__hero {
+    background-image: url(../images/hero/dots_desktop2x.png);
+  }
+}
+
+.hero_container {
+  position: relative;
+  display: flex;
+}
+
+.container-left {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 65px;
+}
+
+.about-ice-cream {
+  display: flex;
+  margin-bottom: 19px;
+}
+@media screen and (min-width: 768px) {
+  .about-ice-cream {
+    margin-bottom: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-ice-cream {
+    margin-bottom: 42px;
+  }
+}
+
+.hero-title {
+  display: block;
+  box-sizing: content-box;
+  font-family: "Seymour One";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.27;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  max-width: 247px;
+  padding-top: 50px;
+  font-size: 26px;
+  color: var(--brand-white);
+}
+@media screen and (min-width: 768px) {
+  .hero-title {
+    max-width: 247px;
+    padding-top: 14px;
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    max-width: 367px;
+    padding-top: 45px;
+    font-size: 38px;
+    line-height: 1.26;
+  }
+}
+
+.hero-title__passion {
+  display: block;
+  box-sizing: content-box;
+  font-family: "Seymour One";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.27;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  max-width: 247px;
+  font-size: 34px;
+  margin-bottom: 32px;
+  color: var(--brand-white);
+}
+@media screen and (min-width: 768px) {
+  .hero-title__passion {
+    max-width: 247px;
+    font-size: 34px;
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-title__passion {
+    max-width: 367px;
+    margin-bottom: 28px;
+    font-size: 38px;
+    line-height: 1.26;
+  }
+}
+
+.about-ice-cream__list {
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.products-anchor .link-products {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 104px;
+  height: 34px;
+  background-color: transparent;
+  border: 2px solid var(--brand-yellow);
+  border-radius: 8px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  color: var(--brand-black);
+  text-decoration: none;
+  cursor: url(../images/cursor.png), pointer;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--transition-timing-function);
+}
+.products-anchor .link-products:hover, .products-anchor .link-products:focus {
+  border: 2px solid #0a8817;
+  outline: transparent;
+}
+@media screen and (min-width: 1200px) {
+  .products-anchor .link-products {
+    width: 130px;
+    height: 38px;
+    border-radius: 10px;
+  }
+}
+.products-anchor .link-products:hover {
+  border: 2px solid #0a8817;
+}
+.products-anchor .link-products:focus {
+  border: 2px solid #0a8817;
+  color: var(--brand-menu);
+}
+.products-anchor .link-products:disabled {
+  border-color: #ababab;
+}
+
+.link-made {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.21;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 114px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  border-radius: 8px;
+  color: var(--brand-yellow);
+  cursor: url(../images/cursor.png), pointer;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--transition-timing-function);
+}
+@media screen and (min-width: 768px) {
+  .link-made {
+    width: 114px;
+    height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .link-made {
+    width: 154px;
+    height: 40px;
+    border-radius: 10px;
+  }
+}
+.link-made:hover {
+  color: #0a8817;
+}
+.link-made:focus {
+  color: var(--brand-menu);
+}
+.link-made:disabled {
+  color: #ababab;
+}
+
+.info-with-arrow__list {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .info-with-arrow__list {
+    display: none;
+  }
+}
+
+.many-ice-cream__wrap .many-ice-cream__img {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .many-ice-cream__wrap .many-ice-cream__img {
+    width: 152px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .many-ice-cream__wrap .many-ice-cream__img {
+    width: 225px;
+  }
+}
+
+.info-with-arrow__text {
+  position: relative;
+  display: block;
+  align-items: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.42;
+  font-size: 12px;
+  letter-spacing: 0em;
+  width: 139px;
+  color: var(--brand-white);
+}
+@media screen and (min-width: 1200px) {
+  .info-with-arrow__text {
+    font-size: 14px;
+    width: 200px;
+  }
+}
+
+.info-with-arrow__text::after {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 16px;
+  background-size: contain;
+  margin-top: 40px;
+  left: 0;
+  background-image: url(../images/hero/Arrow.png);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .info-with-arrow__text::after {
+    background-image: url(../images/hero/Arrow2x.png);
+  }
+}
+
+.container-right {
+  position: relative;
+  display: flex;
+}
+
+.container-center {
+  display: block;
+  align-items: bottom;
+}
+
+.container-center .ice-creame-conus {
+  position: absolute;
+  width: 177px;
+  bottom: 0;
+  align-items: bottom;
+  right: 0;
+  margin-right: 60px;
+  max-width: none;
+}
+@media screen and (min-width: 768px) {
+  .container-center .ice-creame-conus {
+    width: 268px;
+    margin-right: 92px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .container-center .ice-creame-conus {
+    width: 456px;
+  }
+}
+
+.ownership {
+  padding-top: 28px;
+}
+@media screen and (max-width: 767px) {
+  .ownership {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .ownership {
+    padding-top: 53px;
+  }
+}
+
+.ownership__list {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  gap: 20px;
+  right: 0;
+  top: 0;
+}
+@media screen and (min-width: 1200px) {
+  .ownership__list {
+    gap: 16px;
+  }
+}
+
+.ownership__item {
+  display: block;
+}
+@media screen and (min-width: 1200px) {
+  .ownership__item {
+    width: 79px;
+  }
+}
+
+.ownership__amaunt {
+  display: block;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 1.21;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--brand-black);
+}
+@media screen and (min-width: 1200px) {
+  .ownership__amaunt {
+    width: 79px;
+    font-size: 46px;
+  }
+}
+
+.ownership__detail {
+  display: block;
+  width: 46px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: right;
+  letter-spacing: 0em;
+  color: var(--brand-white);
+}
+@media screen and (min-width: 1200px) {
+  .ownership__detail {
+    width: 79px;
+    font-size: 14px;
+    line-height: 1.21;
   }
 }
 
