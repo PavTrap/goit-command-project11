@@ -1296,7 +1296,6 @@ body {
 @media screen and (min-width: 1200px) {
   .hero-title__passion {
     max-width: 367px;
-    padding-top: 45px;
     margin-bottom: 28px;
     font-size: 38px;
     line-height: 1.26;
