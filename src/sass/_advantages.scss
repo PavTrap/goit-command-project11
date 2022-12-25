@@ -37,7 +37,7 @@ background-color: var(--brand-green);
 
     align-items: center;
 
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: 768px) {
       flex-direction: row;      
       align-items: center;  
       gap: 80px;
