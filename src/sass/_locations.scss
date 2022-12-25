@@ -1,0 +1,139 @@
+.overlay {
+  /* Скрываем подложку  */
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transition: 0.3s all;
+  @media screen and (max-height: 991px) {
+    overflow: scroll;
+  }
+}
+.modal {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-locations {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  width: 280px;
+  height: 365px;
+  padding: 28px;
+  background-color: #fcfcfc;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+
+  @media screen and (min-width: 768px) {
+    width: 568px;
+    height: 458px;
+    padding: 32px, 60px;
+  }
+}
+
+.modal-locations_label {
+  font-family: 'Seymour One';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 20px;
+
+  color: #131313;
+
+  @media screen and (min-width: 768px) {
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 32px;
+  }
+}
+
+.map {
+  height: 200px;
+  width: 100%;
+  margin-bottom: 24px;
+  border-radius: 10px;
+
+  @media screen and (min-width: 768px) {
+    height: 260px;
+    width: 100%;
+    margin-bottom: 32px;
+  }
+}
+
+.modal__close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 24px;
+  height: 24px;
+  color: #131313;
+  background-color: #fff;
+  cursor: url(../images/cursor.png), pointer;
+  outline: none;
+}
+
+.icon-button {
+  fill: currentColor;
+}
+
+.form-btn {
+  display: block;
+  margin: 0 auto;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  margin: auto;
+
+  outline: none;
+  color: #131313;
+  background: #f8d24e;
+  font-family: inherit;
+  cursor: url(../images/cursor.png), pointer;
+  border-radius: 10px;
+  padding: 12px 34px;
+  min-width: 114px;
+  min-height: 42px;
+  border: transparent;
+
+  &:hover {
+    border: 2px solid #0a8817;
+  }
+
+  &:focus {
+    border: 2px solid #0a8817;
+    color: #fff;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.2;
+    min-width: 145px;
+  }
+}
