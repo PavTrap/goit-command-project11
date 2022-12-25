@@ -6,16 +6,23 @@
     <div class="about__desc">
       <div class="about__position">
         <div class="about__circle"></div>
-        <img class="about__img" srcset="
-                .\images\about\cow_sm@1x.jpg 279w,
-                .\images\about\cow_md@1x.jpg 330w,
-                .\images\about\cow_lg@1x.jpg 490w,
-                .\images\about\cow_sm@2x.jpg 558w,
-                .\images\about\cow_md@2x.jpg 660w,
-                .\images\about\cow_lg@2x.jpg 980w
-                " sizes="(min-width: 1200px) 490px,
+        <img
+          class="about__img"
+          srcset="
+            .\images\about\cow_sm@1x.jpg 279w,
+            .\images\about\cow_md@1x.jpg 330w,
+            .\images\about\cow_lg@1x.jpg 490w,
+            .\images\about\cow_sm@2x.jpg 558w,
+            .\images\about\cow_md@2x.jpg 660w,
+            .\images\about\cow_lg@2x.jpg 980w
+          "
+          sizes="(min-width: 1200px) 490px,
                         (min-width: 768px) 330px,
-                        (min-width: 480px) 279px, 100vw" alt="cow" src=".\images\about\cow_sm@1x.jpg" loading="lazy" />
+                        (min-width: 480px) 279px, 100vw"
+          alt="cow"
+          src=".\images\about\cow_sm@1x.jpg"
+          loading="lazy"
+        />
       </div>
       <div class="about__text-right">
         <p class="about__descriptions">
@@ -32,7 +39,12 @@
         <p class="about__choice">
           This is enough to choose ice cream and coffee for any mood!
         </p>
-        <button class="btn__read-more btn__read-more--about" type="button" data-modal-open>
+        <button
+          class="btn__read-more btn__read-more--about js-open-modal"
+          data-modal="3"
+          type="button"
+          data-modal-open
+        >
           Read more
           <svg class="about__icon-btn" width="12px" height="12px">
             <use href="./images/svg/symbol-defs.svg#icon-right-bold"></use>
@@ -42,4 +54,3 @@
     </div>
   </div>
 </section>
-
