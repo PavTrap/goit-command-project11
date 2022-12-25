@@ -2,7 +2,7 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 .gallery {
   padding-bottom: 12px;
-  background-image: linear-gradient(to bottom, var(--brand-green) 25%, #ffffff00 25%, #ff000000 35%, #ff313100 35%);
+  background-image: linear-gradient(to bottom, var(--brand-green) 25%, rgba(255, 255, 255, 0) 25%, rgba(255, 0, 0, 0) 35%, rgba(255, 49, 49, 0) 35%);
 }
 
 .gallery__container {
@@ -230,12 +230,6 @@
   outline: 1px solid tomato;
   width: 100%;
 }
-@media screen and (max-width: 479px) {
-  .container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-}
 @media screen and (min-width: 480px) {
   .container {
     width: 440px;
@@ -414,7 +408,7 @@
 .about__descriptions {
   margin: auto;
   width: 220px;
-  line-height: calc(22 / 12);
+  line-height: 1.8333333333;
   text-align: center;
   font-weight: 400;
   color: var(--brand-white);
@@ -423,7 +417,7 @@
 @media screen and (min-width: 768px) {
   .about__descriptions {
     width: 336px;
-    line-height: calc(22 / 12);
+    line-height: 1.8333333333;
     text-align: left;
     margin-bottom: 8px;
   }
@@ -432,7 +426,7 @@
   .about__descriptions {
     font-size: 16px;
     width: 463px;
-    line-height: calc(28 / 16);
+    line-height: 1.75;
   }
 }
 
@@ -440,7 +434,7 @@
   margin: auto;
   width: 220px;
   font-style: normal;
-  line-height: calc(22 / 12);
+  line-height: 1.8333333333;
   text-align: center;
   font-weight: 400;
   color: var(--brand-white);
@@ -449,7 +443,7 @@
 @media screen and (min-width: 768px) {
   .about__product {
     width: 336px;
-    line-height: calc(22 / 12);
+    line-height: 1.8333333333;
     text-align: left;
     margin-bottom: 8px;
   }
@@ -458,7 +452,7 @@
   .about__product {
     width: 463px;
     font-size: 14px;
-    line-height: calc(28 / 16);
+    line-height: 1.75;
   }
 }
 
@@ -501,7 +495,7 @@
   display: flex;
   font-weight: 600;
   font-size: 14px;
-  line-height: calc(18 / 14);
+  line-height: 1.2857142857;
   margin-left: auto;
   margin-right: auto;
   transition: background-color 250ms var(--transition-timing-function), outline 250ms var(--transition-timing-function), color 250ms var(--transition-timing-function);
@@ -1116,7 +1110,7 @@ body *:hover {
   font-family: inherit;
   font-weight: 500;
   font-size: 12px;
-  line-height: calc(14 / 12);
+  line-height: 1.1666666667;
   align-items: center;
   text-align: center;
   letter-spacing: 0.04em;
@@ -1125,7 +1119,7 @@ body *:hover {
 @media screen and (min-width: 768px) {
   .category__title {
     font-size: 16px;
-    line-height: calc(22 / 16);
+    line-height: 1.375;
     margin-bottom: 32px;
   }
 }
@@ -1146,7 +1140,7 @@ body *:hover {
   font-family: inherit;
   font-weight: 500;
   font-size: 12px;
-  line-height: calc(22 / 12);
+  line-height: 1.8333333333;
   letter-spacing: 0.04em;
   color: var(--brand-black);
   margin-bottom: 8px;
@@ -1159,13 +1153,13 @@ body *:hover {
 @media screen and (min-width: 768px) {
   .adress__title {
     font-size: 14px;
-    line-height: calc(26 / 14);
+    line-height: 1.8571428571;
   }
 }
 @media screen and (min-width: 1200px) {
   .adress__title {
     font-size: 16px;
-    line-height: calc(30 / 16);
+    line-height: 1.875;
   }
 }
 
@@ -1173,7 +1167,7 @@ body *:hover {
   font-family: inherit;
   font-weight: 500;
   font-size: 12px;
-  line-height: calc(22 / 12);
+  line-height: 1.8333333333;
   letter-spacing: 0.04em;
   color: #d6936d;
   cursor: url(../images/cursor.png), pointer;
@@ -1181,13 +1175,13 @@ body *:hover {
 @media screen and (min-width: 768px) {
   .adress__link {
     font-size: 14px;
-    line-height: calc(26 / 14);
+    line-height: 1.8571428571;
   }
 }
 @media screen and (min-width: 1200px) {
   .adress__link {
     font-size: 16px;
-    line-height: calc(29 / 16);
+    line-height: 1.8125;
   }
 }
 .adress__link:hover, .adress__link:focus {
@@ -1198,19 +1192,19 @@ body *:hover {
   font-family: inherit;
   font-weight: 500;
   font-size: 12px;
-  line-height: calc(22 / 12);
+  line-height: 1.8333333333;
   color: var(--brand-black);
 }
 @media screen and (min-width: 768px) {
   .week__title {
     font-size: 14px;
-    line-height: calc(26 / 14);
+    line-height: 1.8571428571;
   }
 }
 @media screen and (min-width: 1200px) {
   .week__title {
     font-size: 16px;
-    line-height: calc(30 / 16);
+    line-height: 1.875;
   }
 }
 
@@ -1218,20 +1212,20 @@ body *:hover {
   font-family: inherit;
   font-weight: 500;
   font-size: 12px;
-  line-height: calc(22 / 12);
+  line-height: 1.8333333333;
   color: #ababab;
   margin-bottom: 8px;
 }
 @media screen and (min-width: 768px) {
   .week__time {
     font-size: 14px;
-    line-height: calc(26 / 14);
+    line-height: 1.8571428571;
   }
 }
 @media screen and (min-width: 1200px) {
   .week__time {
     font-size: 16px;
-    line-height: calc(30 / 16);
+    line-height: 1.875;
     margin-bottom: 12px;
   }
 }
@@ -1240,18 +1234,18 @@ body *:hover {
   font-family: inherit;
   font-weight: 500;
   font-size: 12px;
-  line-height: calc(19 / 12);
+  line-height: 1.5833333333;
 }
 @media screen and (min-width: 768px) {
   .category-contacts__item {
     font-size: 14px;
-    line-height: calc(21 / 14);
+    line-height: 1.5;
   }
 }
 @media screen and (min-width: 1200px) {
   .category-contacts__item {
     font-size: 16px;
-    line-height: calc(24 / 16);
+    line-height: 1.5;
   }
 }
 
@@ -1273,7 +1267,7 @@ body *:hover {
   font-family: inherit;
   font-weight: 600;
   font-size: 14px;
-  line-height: calc(18 / 14);
+  line-height: 1.2857142857;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -1878,7 +1872,7 @@ a {
   height: 100vh;
   padding: 20px 32px 32px 20px;
   background-color: var(--brand-green);
-  z-index: 999;
+  z-index: 899;
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
 }
@@ -1953,6 +1947,422 @@ a {
   }
 }
 
+.hero_overlay {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: var(--brand-green);
+  background-size: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 767px) {
+  .hero_overlay {
+    height: 454px;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero_overlay {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero_overlay {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+.container__hero {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--brand-green);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  height: 100%;
+}
+@media screen and (max-width: 767px) {
+  .container__hero {
+    flex-direction: row;
+    background-image: url(../images/hero/dots-mobile.png);
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .container__hero {
+    background-image: url(../images/hero/dots-mobile2x.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  .container__hero {
+    background-image: url(../images/hero/dots-tablet.png);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .container__hero {
+    background-image: url(../images/hero/dots-tablet2x.png);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container__hero {
+    background-image: url(../images/hero/dots_desktop.png);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .container__hero {
+    background-image: url(../images/hero/dots_desktop2x.png);
+  }
+}
+
+.hero_container {
+  position: relative;
+  display: flex;
+}
+
+.container-left {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 65px;
+}
+
+.about-ice-cream {
+  display: flex;
+  margin-bottom: 19px;
+}
+@media screen and (min-width: 768px) {
+  .about-ice-cream {
+    margin-bottom: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-ice-cream {
+    margin-bottom: 42px;
+  }
+}
+
+.hero-title {
+  display: block;
+  box-sizing: content-box;
+  font-family: "Seymour One";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.27;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  max-width: 247px;
+  padding-top: 50px;
+  font-size: 26px;
+  color: var(--brand-white);
+}
+@media screen and (min-width: 768px) {
+  .hero-title {
+    max-width: 247px;
+    padding-top: 14px;
+    font-size: 26px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    max-width: 367px;
+    padding-top: 45px;
+    font-size: 38px;
+    line-height: 1.26;
+  }
+}
+
+.hero-title__passion {
+  display: block;
+  box-sizing: content-box;
+  font-family: "Seymour One";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.27;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  max-width: 247px;
+  font-size: 34px;
+  margin-bottom: 32px;
+  color: var(--brand-white);
+}
+@media screen and (min-width: 768px) {
+  .hero-title__passion {
+    max-width: 247px;
+    font-size: 34px;
+    margin-bottom: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-title__passion {
+    max-width: 367px;
+    margin-bottom: 28px;
+    font-size: 38px;
+    line-height: 1.26;
+  }
+}
+
+.about-ice-cream__list {
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.products-anchor .link-products {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 104px;
+  height: 34px;
+  background-color: transparent;
+  border: 2px solid var(--brand-yellow);
+  border-radius: 8px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.29;
+  color: var(--brand-black);
+  text-decoration: none;
+  cursor: url(../images/cursor.png), pointer;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--transition-timing-function);
+}
+.products-anchor .link-products:hover, .products-anchor .link-products:focus {
+  border: 2px solid #0a8817;
+  outline: transparent;
+}
+@media screen and (min-width: 1200px) {
+  .products-anchor .link-products {
+    width: 130px;
+    height: 38px;
+    border-radius: 10px;
+  }
+}
+.products-anchor .link-products:hover {
+  border: 2px solid #0a8817;
+}
+.products-anchor .link-products:focus {
+  border: 2px solid #0a8817;
+  color: var(--brand-menu);
+}
+.products-anchor .link-products:disabled {
+  border-color: #ababab;
+}
+
+.link-made {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.21;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 114px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  border-radius: 8px;
+  color: var(--brand-yellow);
+  cursor: url(../images/cursor.png), pointer;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--transition-timing-function);
+}
+@media screen and (min-width: 768px) {
+  .link-made {
+    width: 114px;
+    height: 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .link-made {
+    width: 154px;
+    height: 40px;
+    border-radius: 10px;
+  }
+}
+.link-made:hover {
+  color: #0a8817;
+}
+.link-made:focus {
+  color: var(--brand-menu);
+}
+.link-made:disabled {
+  color: #ababab;
+}
+
+.info-with-arrow__list {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .info-with-arrow__list {
+    display: none;
+  }
+}
+
+.many-ice-cream__wrap .many-ice-cream__img {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .many-ice-cream__wrap .many-ice-cream__img {
+    width: 152px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .many-ice-cream__wrap .many-ice-cream__img {
+    width: 225px;
+  }
+}
+
+.info-with-arrow__text {
+  position: relative;
+  display: block;
+  align-items: center;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.42;
+  font-size: 12px;
+  letter-spacing: 0em;
+  width: 139px;
+  color: var(--brand-white);
+}
+@media screen and (min-width: 1200px) {
+  .info-with-arrow__text {
+    font-size: 14px;
+    width: 200px;
+  }
+}
+
+.info-with-arrow__text::after {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 16px;
+  background-size: contain;
+  margin-top: 40px;
+  left: 0;
+  background-image: url(../images/hero/Arrow.png);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .info-with-arrow__text::after {
+    background-image: url(../images/hero/Arrow2x.png);
+  }
+}
+
+.container-right {
+  position: relative;
+  display: flex;
+}
+
+.container-center {
+  display: block;
+  align-items: bottom;
+}
+
+.container-center .ice-creame-conus {
+  position: absolute;
+  width: 177px;
+  bottom: 0;
+  align-items: bottom;
+  right: 0;
+  margin-right: 60px;
+  max-width: none;
+}
+@media screen and (min-width: 768px) {
+  .container-center .ice-creame-conus {
+    width: 268px;
+    margin-right: 92px;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1200px) {
+  .container-center .ice-creame-conus {
+    width: 456px;
+  }
+}
+
+.ownership {
+  padding-top: 28px;
+}
+@media screen and (max-width: 767px) {
+  .ownership {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .ownership {
+    padding-top: 53px;
+  }
+}
+
+.ownership__list {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  gap: 20px;
+  right: 0;
+  top: 0;
+}
+@media screen and (min-width: 1200px) {
+  .ownership__list {
+    gap: 16px;
+  }
+}
+
+.ownership__item {
+  display: block;
+}
+@media screen and (min-width: 1200px) {
+  .ownership__item {
+    width: 79px;
+  }
+}
+
+.ownership__amaunt {
+  display: block;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 1.21;
+  text-align: right;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--brand-black);
+}
+@media screen and (min-width: 1200px) {
+  .ownership__amaunt {
+    width: 79px;
+    font-size: 46px;
+  }
+}
+
+.ownership__detail {
+  display: block;
+  width: 46px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  text-align: right;
+  letter-spacing: 0em;
+  color: var(--brand-white);
+}
+@media screen and (min-width: 1200px) {
+  .ownership__detail {
+    width: 79px;
+    font-size: 14px;
+    line-height: 1.21;
+  }
+}
+
 /* Стили для подложки */
 .overlay {
   /* Скрываем подложку  */
@@ -1988,8 +2398,7 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 30;
-  /* Должен быть выше чем у подложки*/
+  z-index: 30; /* Должен быть выше чем у подложки*/
   /*  Побочные стили   */
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -2137,8 +2546,7 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 30;
-  /* Должен быть выше чем у подложки*/
+  z-index: 30; /* Должен быть выше чем у подложки*/
   /*  Побочные стили   */
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -2288,12 +2696,12 @@ a {
 .about-product__value {
   font-weight: 500;
   font-size: 10px;
-  line-height: calc(28 / 10);
+  line-height: 2.8;
 }
 @media screen and (min-width: 768px) {
   .about-product__value {
     font-size: 12px;
-    line-height: calc(28 / 12);
+    line-height: 2.3333333333;
   }
 }
 
@@ -2332,7 +2740,7 @@ a {
 .ingredients-title {
   font-weight: 500;
   font-size: 20px;
-  line-height: calc(28 / 20);
+  line-height: 1.4;
   margin-bottom: 24px;
 }
 
@@ -2451,7 +2859,7 @@ a {
   padding: 12px 34px;
   font-weight: 600;
   font-size: 12px;
-  line-height: calc(15 / 12);
+  line-height: 1.25;
   color: #131313;
   border: none;
   border-radius: 10px;
@@ -2497,8 +2905,7 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 999;
-  /* Должен быть выше чем у подложки*/
+  z-index: 999; /* Должен быть выше чем у подложки*/
   /*  Побочные стили   */
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
   text-align: center;
@@ -2645,7 +3052,7 @@ a {
 .buy-now__text {
   font-weight: 700;
   font-size: 16px;
-  line-height: calc(20 / 16);
+  line-height: 1.25;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #131313;
@@ -2739,7 +3146,7 @@ a {
   padding: 12px 34px;
   font-weight: 600;
   font-size: 12px;
-  line-height: calc(15 / 12);
+  line-height: 1.25;
   color: #131313;
   border: none;
   border-radius: 10px;
@@ -2882,7 +3289,7 @@ a {
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
-  line-height: calc(44/36);
+  line-height: 1.2222222222;
   /* identical to box height */
   text-align: center;
   letter-spacing: 0.04em;
@@ -2892,14 +3299,14 @@ a {
 @media (min-width: 769px) {
   .advantages__item__title {
     font-size: 48px;
-    line-height: calc(59/48);
+    line-height: 1.2291666667;
     margin-bottom: 12px;
   }
 }
 @media (min-width: 1200px) {
   .advantages__item__title {
     font-size: 58px;
-    line-height: calc(71/58);
+    line-height: 1.224137931;
     margin-bottom: 12px;
   }
 }
@@ -2909,7 +3316,7 @@ a {
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
-  line-height: calc(20/12);
+  line-height: 1.6666666667;
   /* or 20px */
   text-align: center;
   color: var(--brand-white);
@@ -3103,8 +3510,7 @@ a {
   background-color: #fcfcfc;
   border: 2px solid #f8d24e;
   border-radius: 10px;
-  z-index: 999;
-  /* Должен быть выше чем у подложки*/
+  z-index: 999; /* Должен быть выше чем у подложки*/
 }
 @media screen and (min-width: 768px) {
   .modal-franchise {

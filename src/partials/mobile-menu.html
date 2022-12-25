@@ -1,46 +1,44 @@
 <!-- Mobile menu Виниченко Елена -->
 <div class="menu__container js-menu-container" id="mobile-menu">
-    <a class="header__logo logo__mobile" href arial label>
-        <img 
-        class="logo__img"
-        srcset="
+  <a class="header__logo logo__mobile" href arial label>
+    <img
+      class="logo__img"
+      srcset="
         ./images/logo/s1x_logo.png 279w,
         ./images/logo/m1x_logo.png 330w,
         ./images/logo/s2x_logo.png 558w,
         ./images/logo/m2x_logo.png 660w
-        " 
-        sizes="(min-width: 1200px) 490px,
+      "
+      sizes="(min-width: 1200px) 490px,
                 (min-width: 768px) 330px"
-        alt="logo"
-        src="./images/logo/s1x_logo.png"
-        loading="lazy"/>
-    </a>
-    <button class="menu__toggle js-close-menu close__menu">
-      <svg class="menu-close-icon" width="32" height="32">
-        <use href="./images/svg/symbol-defs.svg#close-menu"></use>
-      </svg>
-    </button>
-    <ul class="mobile__menu list">
-      <li class="mobile__item">
-        <a href="" class="mobile__link link"
-          >Home</a
-        >
-      </li>
-      <li class="mobile__item">
-        <a href="" class="mobile__link link
-        ">How it’s made?</a>
-      </li>
-      <li class="mobile__item">
-        <a href="" class="mobile__link link">Our products</a>
-      </li>
-      <li class="mobile__item">
-        <a href="" class="mobile__link link">Contact</a>
-      </li>
-    </ul>
-    <button class="btn__buy-now menu__btn">
-        <p class="btn__content">Buy now</p>
-        <svg class="svg-icon" width="12" height="12">
-          <use xlink:href="./images/svg/symbol-defs.svg#icon-right-bold"></use>
-        </svg>
-    </button>
+      alt="logo"
+      src="./images/logo/s1x_logo.png"
+      loading="lazy"
+    />
+  </a>
+  <button class="menu__toggle js-close-menu close__menu">
+    <svg class="menu-close-icon" width="32" height="32">
+      <use href="./images/svg/symbol-defs.svg#close-menu"></use>
+    </svg>
+  </button>
+  <ul class="mobile__menu list">
+    <li class="mobile__item">
+      <a href="" class="mobile__link link">Home</a>
+    </li>
+    <li class="mobile__item">
+      <a href="" class="mobile__link link">How it’s made?</a>
+    </li>
+    <li class="mobile__item">
+      <a href="" class="mobile__link link">Our products</a>
+    </li>
+    <li class="mobile__item">
+      <a href="" class="mobile__link link">Contact</a>
+    </li>
+  </ul>
+  <button class="btn__buy-now menu__btn js-open-modal" data-modal="1">
+    <p class="btn__content">Buy now</p>
+    <svg class="svg-icon" width="12" height="12">
+      <use xlink:href="./images/svg/symbol-defs.svg#icon-right-bold"></use>
+    </svg>
+  </button>
 </div>
