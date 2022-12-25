@@ -1,0 +1,227 @@
+// .backdrop {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   z-index: 100;
+//   width: 100%;
+//   height: 100%;
+//   background-color: rgba(0, 0, 0, 0.2);
+// }
+
+// .backdrop.is-hidden {
+//   opacity: 0;
+//   pointer-events: none;
+//   visibility: hidden;
+// }
+
+// .backdrop.is-hidden
+
+.overlay {
+  /* Скрываем подложку  */
+  opacity: 0;
+  visibility: hidden;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 20;
+  transition: 0.3s all;
+  @media screen and (max-height: 991px) {
+    overflow: scroll;
+  }
+}
+.modal {
+  opacity: 0;
+  visibility: hidden;
+}
+.modal-franchise {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  // width: 280px;
+  // height: 674px;
+  padding: 28px;
+  background-color: #fcfcfc;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  z-index: 999; /* Должен быть выше чем у подложки*/
+
+  @media screen and (min-width: 768px) {
+    width: 568px;
+    // height: 668px;
+    padding-top: 32px;
+    padding-right: 60px;
+    padding-bottom: 32px;
+    padding-left: 60px;
+  }
+}
+
+.modal.active,
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 24px;
+  height: 24px;
+  color: #131313;
+  background-color: #fff;
+  cursor: url(../images/cursor.png), pointer;
+  outline: none;
+}
+
+.icon-button {
+  fill: currentColor;
+}
+
+.modal-form {
+  @media screen and (min-width: 768px) {
+    width: 368px;
+    margin: auto;
+  }
+}
+
+.modal-form-group {
+  margin-bottom: 24px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 32px;
+  }
+}
+
+.modal_label {
+  font-family: 'Seymour One';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #131313;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 123px;
+    padding-right: 123px;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+
+.modal_text {
+  margin-bottom: 24px;
+  font-family: 'Montserrat';
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.4;
+  color: #131313;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    margin-bottom: 32px;
+  }
+}
+
+.modal-form-field {
+  width: 100%;
+  height: 32px;
+  padding-left: 12px;
+  padding-right: 48px;
+  background: rgba(248, 210, 78, 0.1);
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  // outline: 1px solid transparent;
+  // outline-offset: -1px;
+
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    height: 42px;
+    padding-left: 16px;
+  }
+}
+
+.modal-form-field::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #131313;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+.modal-form-wrapper {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.modal-form-message {
+  display: block;
+  width: 100%;
+  height: 64px;
+  padding: 12px 8px;
+  resize: none;
+
+  @media screen and (min-width: 768px) {
+    height: 84px;
+    padding: 16px 11px;
+  }
+}
+
+.modal-form-message::placeholder {
+  font-size: 12px;
+  line-height: 1.4;
+  color: #131313;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+  }
+}
+
+.form-btn {
+  display: block;
+  margin: 0 auto;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.25;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  margin: auto;
+
+  outline: none;
+  color: #131313;
+  background: #f8d24e;
+  font-family: inherit;
+  cursor: url(../images/cursor.png), pointer;
+  border-radius: 10px;
+  padding: 12px 34px;
+  min-width: 114px;
+  min-height: 42px;
+  border: transparent;
+
+  &:hover {
+    border: 2px solid #0a8817;
+  }
+
+  &:focus {
+    border: 2px solid #0a8817;
+    color: #fff;
+  }
+}

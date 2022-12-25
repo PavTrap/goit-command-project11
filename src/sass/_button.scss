@@ -19,8 +19,6 @@
   border: 2px solid #f8d24e;
   border-radius: 8px;
 
-  cursor: pointer;
-
   &:hover,
   &:focus {
     border: 2px solid #0a8817;
@@ -44,24 +42,20 @@
 }
 
 .btn__read-more {
-  display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 164px;
   height: 42px;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: calc(18 / 14);
   background: var(--brand-yellow);
   border-radius: 10px;
   color: black;
   border: none;
+
   margin-left: auto;
   margin-right: auto;
 
-
-  transition: background-color 250ms var(--transition-timing-function), 
-  outline 250 ms var(--transition-timing-function);
+  transition: background-color 250ms var(--transition-timing-function),
+    outline 250 ms var(--transition-timing-function);
 
   &:hover {
     background-color: #0a8817;
@@ -85,6 +79,7 @@
   border-radius: 10px;
   border: none;
   color: black;
+
   &:hover {
     background: #0a8817;
   }
@@ -104,8 +99,6 @@
   background-color: transparent;
   border: 2px solid #f8d24e;
   border-radius: 8px;
-
-  cursor: pointer;
 
   &:hover {
     border: 2px solid #0a8817;
@@ -127,6 +120,7 @@
   border-radius: 10px;
   border: none;
   color: black;
+
   &:hover {
     background: #0a8817;
   }
