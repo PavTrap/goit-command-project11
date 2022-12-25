@@ -223,6 +223,7 @@
 
   width: 114px;
   height: 24px;
+  text-decoration: underline;
 
   background-color: transparent;
   border: none;
@@ -243,6 +244,7 @@
     width: 154px;
     height: 40px;
 
+    font-size: 14px;
     border-radius: 10px;
   }
   &:hover {
@@ -251,6 +253,7 @@
 
   &:focus {
     color: var(--brand-menu);
+    outline: transparent;
   }
   &:disabled {
     color: #ababab;
