@@ -1155,7 +1155,7 @@ body {
 }
 @media screen and (max-width: 767px) {
   .hero_overlay {
-    height: 502px;
+    height: 454px;
     padding-left: 20px;
     flex-direction: column;
   }
@@ -1231,6 +1231,12 @@ body {
 
 .about-ice-cream {
   display: flex;
+  margin-bottom: 19px;
+}
+@media screen and (min-width: 768px) {
+  .about-ice-cream {
+    margin-bottom: 12px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .about-ice-cream {
@@ -1247,20 +1253,17 @@ body {
   line-height: 1.27;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  max-width: 247px;
+  padding-top: 50px;
+  font-size: 34px;
+  margin-bottom: 32px;
   color: var(--brand-white);
-}
-@media screen and (max-width: 767px) {
-  .hero-title {
-    max-width: 247px;
-    padding-top: 50px;
-    font-size: 26px;
-    margin-bottom: 32px;
-  }
 }
 @media screen and (min-width: 768px) {
   .hero-title {
     max-width: 247px;
     padding-top: 14px;
+    font-size: 26px;
     margin-bottom: 24px;
   }
 }
@@ -1278,7 +1281,7 @@ body {
   padding-left: 0;
   display: flex;
   align-items: center;
-  gap: 34px;
+  gap: 12px;
 }
 
 .products-anchor .link-products {
@@ -1328,31 +1331,33 @@ body {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.21;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 114px;
+  height: 24px;
+  background-color: transparent;
+  border: none;
+  border-radius: 8px;
   color: var(--brand-yellow);
   cursor: url(../images/cursor.png), pointer;
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: var(--transition-timing-function);
 }
+@media screen and (min-width: 768px) {
+  .link-made {
+    width: 114px;
+    height: 24px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .link-made {
-    width: 134px;
-    height: 42px;
-    padding: 12px 34px;
+    width: 154px;
+    height: 40px;
     border-radius: 10px;
-    padding-left: 16px;
-  }
-}
-@media screen and (min-width: 1200px) and (max-width: 767px) {
-  .link-made {
-    padding-left: 20px;
-  }
-}
-@media screen and (min-width: 1200px) and (max-width: 1199px) {
-  .link-made {
-    padding-left: 32px;
   }
 }
 .link-made:hover {

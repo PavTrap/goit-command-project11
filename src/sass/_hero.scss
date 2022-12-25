@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   @media screen and (max-width: 767px) {
-    height: 502px;
+    height: 454px;
     padding-left: 20px;
     flex-direction: column;
   }
@@ -77,6 +77,11 @@
 
 .about-ice-cream {
   display: flex;
+  margin-bottom: 19px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+  }
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 42px;
@@ -92,20 +97,17 @@
   line-height: 1.27;
   letter-spacing: 0.04em;
   text-transform: uppercase;
+  max-width: 247px;
+  padding-top: 50px;
 
+  font-size: 34px;
+  margin-bottom: 32px;
   color: var(--brand-white);
-  @media screen and (max-width: 767px) {
-    max-width: 247px;
-    padding-top: 50px;
-
-    font-size: 26px;
-    margin-bottom: 32px;
-  }
 
   @media screen and (min-width: 768px) {
     max-width: 247px;
     padding-top: 14px;
-
+    font-size: 26px;
     margin-bottom: 24px;
   }
 
@@ -124,7 +126,7 @@
   padding-left: 0;
   display: flex;
   align-items: center;
-  gap: 34px;
+  gap: 12px;
 }
 
 .products-anchor .link-products {
@@ -183,8 +185,19 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.21;
+
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+
+  width: 114px;
+  height: 24px;
+
+  background-color: transparent;
+  border: none;
+  border-radius: 8px;
 
   color: var(--brand-yellow);
   cursor: url(../images/cursor.png), pointer;
@@ -193,20 +206,15 @@
   transition-duration: 250ms;
   transition-timing-function: var(--transition-timing-function);
 
+  @media screen and (min-width: 768px) {
+    width: 114px;
+    height: 24px;
+  }
   @media screen and (min-width: 1200px) {
-    width: 134px;
-    height: 42px;
-    padding: 12px 34px;
+    width: 154px;
+    height: 40px;
+
     border-radius: 10px;
-    padding-left: 16px;
-
-    @media screen and (max-width: 767px) {
-      padding-left: 20px;
-    }
-
-    @media screen and (max-width: 1199px) {
-      padding-left: 32px;
-    }
   }
   &:hover {
     color: #0a8817;
