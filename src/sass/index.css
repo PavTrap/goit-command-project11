@@ -643,6 +643,7 @@ body {
 @media screen and (min-width: 1200px) {
   .products__title {
     margin-bottom: 175px;
+    margin-bottom: 303px;
   }
 }
 
@@ -734,78 +735,78 @@ body {
     margin-bottom: 66px;
   }
 }
-
-.products__list {
+.products__text--milkshakes .products__list {
   padding-left: 0;
   padding-bottom: 60px;
   list-style: none;
 }
 @media screen and (min-width: 768px) {
-  .products__list {
+  .products__text--milkshakes .products__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 15px;
     padding-bottom: 80px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .products__list {
+  .products__text--milkshakes .products__list {
     gap: 29px;
     padding-bottom: 60px;
+    flex-wrap: nowrap;
   }
 }
-
-.products__item {
-  margin-bottom: 164px;
+.products__text--milkshakes .products__item {
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (min-width: 768px) {
-  .products__item {
-    margin-bottom: 0;
-  }
-}
-
-.products__item:last-child {
+.products__text--milkshakes .products__item:last-child {
   margin-bottom: 0;
 }
-
-.products__item--cream {
+.products__text--milkshakes .products__item--cream {
+  position: relative;
   background-color: var(--brand-products-1);
   width: 280px;
   height: 528px;
   border-radius: 24px;
 }
 @media screen and (min-width: 768px) {
-  .products__item--cream {
+  .products__text--milkshakes .products__item--cream {
     width: 224px;
     height: 428px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .products__item--cream {
+  .products__text--milkshakes .products__item--cream {
     width: 370px;
     height: 535px;
   }
 }
-
-.products__item--green {
-  position: relative;
+.products__text--milkshakes .products__item--green {
+  position: absolute;
   width: 200px;
   height: 200px;
   margin-left: auto;
   margin-right: auto;
   top: -100px;
+  z-index: 1;
   background: linear-gradient(0deg, rgba(156, 190, 143, 0.7), rgba(156, 190, 143, 0.7)), #d9d9d9;
   box-shadow: 0px 5.34219px 20.0332px rgba(10, 136, 23, 0.25);
   border-radius: 100.166px;
 }
 @media screen and (min-width: 768px) {
-  .products__item--green {
-    margin-bottom: -30px;
+  .products__text--milkshakes .products__item--green {
+    margin-bottom: 0px;
   }
 }
-.products__item--green::before {
+@media (min-width: 1200px) {
+  .products__text--milkshakes .products__item--green {
+    border-radius: 50%;
+    width: 302px;
+    height: 302px;
+    top: -170px;
+  }
+}
+.products__text--milkshakes .products__item--green::before {
   display: block;
   content: "";
   width: 200px;
@@ -816,27 +817,32 @@ body {
   position: absolute;
   bottom: 12px;
 }
-
-.products__item--coffee {
+@media (min-width: 1200px) {
+  .products__text--milkshakes .products__item--green::before {
+    width: 302px;
+    height: 302px;
+  }
+}
+.products__text--milkshakes .products__item--coffee {
+  position: relative;
   background-color: var(--brand-products-2);
   width: 280px;
   height: 528px;
   border-radius: 24px;
 }
 @media screen and (min-width: 768px) {
-  .products__item--coffee {
+  .products__text--milkshakes .products__item--coffee {
     width: 224px;
     height: 428px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .products__item--coffee {
+  .products__text--milkshakes .products__item--coffee {
     width: 370px;
     height: 535px;
   }
 }
-
-.products__item--yellow {
+.products__text--milkshakes .products__item--yellow {
   position: relative;
   width: 200px;
   height: 200px;
@@ -848,11 +854,19 @@ body {
   border-radius: 100.166px;
 }
 @media screen and (min-width: 768px) {
-  .products__item--yellow {
+  .products__text--milkshakes .products__item--yellow {
     margin-bottom: -30px;
   }
 }
-.products__item--yellow::before {
+@media (min-width: 1200px) {
+  .products__text--milkshakes .products__item--yellow {
+    border-radius: 50%;
+    width: 302px;
+    height: 302px;
+    top: -170px;
+  }
+}
+.products__text--milkshakes .products__item--yellow::before {
   display: block;
   content: "";
   width: 200px;
@@ -863,8 +877,13 @@ body {
   position: absolute;
   bottom: 12px;
 }
-
-.products__item--milkshakes {
+@media (min-width: 1200px) {
+  .products__text--milkshakes .products__item--yellow::before {
+    width: 302px;
+    height: 302px;
+  }
+}
+.products__text--milkshakes .products__item--milkshakes {
   padding-bottom: 60px;
   background-color: var(--brand-products-3);
   width: 280px;
@@ -872,19 +891,18 @@ body {
   border-radius: 24px;
 }
 @media screen and (min-width: 768px) {
-  .products__item--milkshakes {
+  .products__text--milkshakes .products__item--milkshakes {
     width: 224px;
     height: 428px;
   }
 }
 @media screen and (min-width: 1200px) {
-  .products__item--milkshakes {
+  .products__text--milkshakes .products__item--milkshakes {
     width: 370px;
     height: 535px;
   }
 }
-
-.products__item--brown {
+.products__text--milkshakes .products__item--brown {
   position: relative;
   width: 200px;
   height: 200px;
@@ -896,11 +914,19 @@ body {
   border-radius: 100.166px;
 }
 @media screen and (min-width: 768px) {
-  .products__item--brown {
+  .products__text--milkshakes .products__item--brown {
     margin-bottom: -30px;
   }
 }
-.products__item--brown::before {
+@media (min-width: 1200px) {
+  .products__text--milkshakes .products__item--brown {
+    border-radius: 50%;
+    width: 302px;
+    height: 302px;
+    top: -170px;
+  }
+}
+.products__text--milkshakes .products__item--brown::before {
   display: block;
   content: "";
   width: 200px;
@@ -911,62 +937,60 @@ body {
   position: absolute;
   bottom: 12px;
 }
-
-.products__item-align {
+@media (min-width: 1200px) {
+  .products__text--milkshakes .products__item--brown::before {
+    width: 302px;
+    height: 302px;
+  }
+}
+.products__text--milkshakes .products__item-align {
   margin-top: 0px;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 @media screen and (min-width: 768px) {
-  .products__item-align {
+  .products__text--milkshakes .products__item-align {
     margin-top: 0px;
   }
 }
-
-.products__milkshakes {
+.products__text--milkshakes .products__milkshakes {
   padding-bottom: 60px;
 }
-
-.product__btn {
+.products__text--milkshakes .product__btn {
   transition: width 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.products__icon {
+.products__text--milkshakes .products__icon {
   width: 40px;
   height: 20px;
 }
-.product__btn:hover .products__icon {
+.product__btn:hover .products__text--milkshakes .products__icon {
   width: 50px;
 }
-.product__btn:focus .products__icon {
+.product__btn:focus .products__text--milkshakes .products__icon {
   width: 50px;
 }
-
-.products__svg:first-child {
+.products__text--milkshakes .products__svg:first-child {
   display: block;
 }
-.product__btn:focus .products__svg:first-child {
+.product__btn:focus .products__text--milkshakes .products__svg:first-child {
   display: none;
 }
-.products__svg:last-child {
+.products__text--milkshakes .products__svg:last-child {
   display: none;
 }
-.product__btn:focus .products__svg:last-child {
+.product__btn:focus .products__text--milkshakes .products__svg:last-child {
   display: block;
 }
-
-.product__btn--cream {
+.products__text--milkshakes .product__btn--cream {
   background-color: var(--brand-products-1);
   border: none;
 }
-
-.product__btn--coffee {
+.products__text--milkshakes .product__btn--coffee {
   background-color: var(--brand-products-2);
   border: none;
 }
-
-.product__btn--milkshakes {
+.products__text--milkshakes .product__btn--milkshakes {
   background-color: var(--brand-products-3);
   border: none;
 }
