@@ -230,6 +230,11 @@
       background-size: cover;
       position: absolute;
       bottom: 12px;
+      @media  (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                background-image: url(../images/products/products-1@2x-min.png);
+        }
       @media (min-width: 1200px) {
         width: 302px;
         height: 302px;
@@ -300,6 +305,11 @@
       background-size: cover;
       position: absolute;
       bottom: 12px;
+      @media  (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                background-image: url(../images/products/products-2@2x-min.png);
+        }
       @media (min-width: 1200px) {
         width: 302px;
         height: 302px;
@@ -368,6 +378,11 @@
       background-size: cover;
       position: absolute;
       bottom: 12px;
+      @media  (min-device-pixel-ratio: 2),
+                (min-resolution: 192dpi),
+                (min-resolution: 2dppx) {
+                background-image: url(../images/products/products-3@2x-min.png);
+        }
       @media (min-width: 1200px) {
         width: 302px;
         height: 302px;
