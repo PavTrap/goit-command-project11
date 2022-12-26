@@ -1839,7 +1839,7 @@ a {
   padding-top: 32px;
   padding-bottom: 13px;
   color: currentColor;
-  transition: color var(--transition-timing-function);
+  transition: color 250ms var(--transition-timing-function);
 }
 .nav__link:hover, .nav__link:focus {
   color: var(--brand-yellow);
@@ -1856,6 +1856,19 @@ a {
     display: flex;
     padding: 3px;
   }
+}
+
+.btn__buy-now {
+  background: var(--brand-yellow);
+  transition: background-color 250ms var(--transition-timing-function);
+}
+.btn__buy-now:hover {
+  background: #0a8817;
+}
+.btn__buy-now:focus {
+  background: #0a8817;
+  color: #fff;
+  outline: transparent;
 }
 
 .logo__mobile {

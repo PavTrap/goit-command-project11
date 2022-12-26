@@ -68,7 +68,7 @@
     padding-top: 32px;
     padding-bottom: 13px;
     color: currentColor;
-    transition: color var(--transition-timing-function);
+    transition: color 250ms var(--transition-timing-function);
   
     &:hover,
     &:focus {
@@ -88,4 +88,17 @@
         display: flex;
         padding: 3px;
     }
+}
+.btn__buy-now{
+    background: var(--brand-yellow);
+    transition: background-color 250ms var(--transition-timing-function);
+    &:hover {
+        background: #0a8817;
+      }
+      &:focus {
+        background: #0a8817;
+    
+        color: #fff;
+        outline: transparent;
+      }
 }
