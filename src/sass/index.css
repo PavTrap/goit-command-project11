@@ -570,7 +570,7 @@ body {
 body *:hover {
   cursor: url(../images/cursor.png) 15 15, default;
 }
-@media (min-width: 320px) {
+@media (min-width: 300px) {
   body {
     max-width: 1600px;
     background-repeat: no-repeat;
@@ -580,7 +580,7 @@ body *:hover {
     background-image: url(../images/body_bg/mobile1x.png);
   }
 }
-@media (min-width: 320px) and (min-device-pixel-ratio: 2), (min-width: 320px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 320px) and (min-resolution: 192dpi), (min-width: 320px) and (min-resolution: 2dppx) {
+@media (min-width: 300px) and (min-device-pixel-ratio: 2), (min-width: 300px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 300px) and (min-resolution: 192dpi), (min-width: 300px) and (min-resolution: 2dppx) {
   body {
     background-image: url(../images/body_bg/mobile2x.png);
   }
