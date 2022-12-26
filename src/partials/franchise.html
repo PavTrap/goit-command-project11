@@ -24,46 +24,45 @@
     </p>
     <form class="modal-form" name="modal_form">
       <div class="modal-form-group" role="group">
-        <label class="modal-form-label" for="user_name"></label>
+        <label class="modal-form-label" for="write_user_name"></label>
         <div class="modal-form-wrapper">
           <input
             class="modal-form-field"
             type="text"
-            name="user_name"
-            id="user_name"
+            name="write_user_name"
+            id="write_user_name"
             placeholder="Name"
             pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
           />
         </div>
-        <label class="modal-form-label" for="user_phone"></label>
+        <label class="modal-form-label" for="write_user_phone"></label>
         <div class="modal-form-wrapper">
           <input
             class="modal-form-field"
             type="tel"
-            name="user_phone"
-            id="user_phone"
+            name="write_user_phone"
+            id="write_user_phone"
             placeholder="Phone"
             pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
             minlength="13"
             maxlength="13"
           />
         </div>
-        <label class="modal-form-label" for="user_mail"></label>
+        <label class="modal-form-label" for="write_user_mail"></label>
         <div class="modal-form-wrapper">
           <input
             class="modal-form-field"
-            type="mail"
-            name="user_mail"
-            id="user_mail"
-            placeholder="Email"
-            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+            type="email"
+            name="write_user_mail"
+            id="write_user_mail"
+            placeholder="email"
           />
         </div>
-        <label class="modal-form-label" for="user_message"></label>
+        <label class="modal-form-label" for="write_user_message"></label>
         <textarea
           class="modal-form-message modal-form-field"
-          name="user_message"
-          id="user_message"
+          name="write_user_message"
+          id="write_user_message"
           rows="6"
           placeholder="Comment"
         ></textarea>

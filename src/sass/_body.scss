@@ -9,9 +9,26 @@ body {
   & *:hover{
     cursor: url(../images/cursor.png) 15 15, default;
   }
+  
+  @media (min-width: 300px){
+    // max-width: 1600px;
+    background-repeat: repeatnpm;
+    background-position: center;
+    // background-attachment: fixed;
+    background-size: contain;
+    z-index: -1;
+
+    background-image: url(../images/body_bg/mobile1x.png);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/body_bg/mobile2x.png);
+    }
+  }
 
   @media (min-width: 480px) {
-    max-width: 1600px;
+    // max-width: 1600px;
     background-repeat: no-repeat;
     background-position: fixed;
     background-attachment: fixed;
@@ -27,6 +44,7 @@ body {
     }
   }
   @media (min-width: 769px) {
+    background-attachment: fixed;
     background-image: url(../images/body_bg/tablet1x.png);
 
     @media (min-device-pixel-ratio: 2),

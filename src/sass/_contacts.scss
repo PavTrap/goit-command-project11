@@ -1,5 +1,6 @@
 // Contacts Liubomyr Vynnychuk //
 
+
 .list {
   list-style: none;
   padding: 0;
@@ -31,8 +32,8 @@
     var(--brand-green) 25%
   );
 
-  padding-left: 20px;
-  padding-right: 20px;
+  // padding-left: 20px;
+  // padding-right: 20px;
   padding-bottom: 60px;
 
   @media screen and (min-width: 768px) {
@@ -43,8 +44,8 @@
       var(--brand-green) 45%
     );
 
-    padding-left: 32px;
-    padding-right: 32px;
+    // padding-left: 32px;
+    // padding-right: 32px;
     padding-bottom: 40px;
   }
 
@@ -56,8 +57,8 @@
       var(--brand-green) 16%
     );
 
-    padding-left: 16px;
-    padding-right: 16px;
+    // padding-left: 16px;
+    // padding-right: 16px;
     padding-bottom: 120px;
   }
 }
@@ -69,15 +70,22 @@
   justify-content: center;
   margin-bottom: 20px;
 
+  padding-left: 20px;
+  padding-right: 20px;
+
   @media screen and (min-width: 768px) {
     flex-direction: row;
     gap: 16px;
     margin-bottom: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   @media screen and (min-width: 1200px) {
     gap: 32px;
     margin-bottom: 60px;
+    padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
