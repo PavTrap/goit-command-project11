@@ -11,8 +11,8 @@ body {
   }
   
   @media (min-width: 300px){
-    max-width: 1600px;
-    background-repeat: repeat;
+    // max-width: 1600px;
+    background-repeat: repeatnpm;
     background-position: center;
     // background-attachment: fixed;
     background-size: contain;
@@ -28,7 +28,7 @@ body {
   }
 
   @media (min-width: 480px) {
-    max-width: 1600px;
+    // max-width: 1600px;
     background-repeat: no-repeat;
     background-position: fixed;
     background-attachment: fixed;
