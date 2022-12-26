@@ -13,7 +13,7 @@ body {
   @media (min-width: 300px){
     max-width: 1600px;
     background-repeat: no-repeat;
-    background-position: fixed;
+    background-position: center;
     // background-attachment: fixed;
     background-size: cover;
     z-index: -1;
@@ -31,7 +31,7 @@ body {
     max-width: 1600px;
     background-repeat: no-repeat;
     background-position: fixed;
-    // background-attachment: fixed;
+    background-attachment: fixed;
     background-size: cover;
     z-index: -1;
 
