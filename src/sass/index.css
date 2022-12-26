@@ -573,9 +573,9 @@ body *:hover {
 @media (min-width: 300px) {
   body {
     max-width: 1600px;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     z-index: -1;
     background-image: url(../images/body_bg/mobile1x.png);
   }
