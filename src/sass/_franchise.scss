@@ -44,7 +44,7 @@
   transform: translate(-50%, -50%) scale(1);
 
   width: 280px;
-  height: 674px;
+  // height: 674px;
   padding: 28px;
   background-color: #fcfcfc;
   border: 2px solid #f8d24e;
@@ -53,7 +53,7 @@
 
   @media screen and (min-width: 768px) {
     width: 568px;
-    max-height: 668px;
+    // max-height: 668px;
     padding-top: 32px;
     padding-right: 60px;
     padding-bottom: 32px;
@@ -84,9 +84,9 @@
   cursor: url(../images/cursor.png) 14 14, pointer;
   outline: none;
   @media screen and (min-width: 768px) {
-      width: 14px;
-      height: 14px;
-    }
+    width: 14px;
+    height: 14px;
+  }
 }
 
 .icon-button {
